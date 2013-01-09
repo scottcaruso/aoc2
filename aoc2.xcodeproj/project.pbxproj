@@ -23,6 +23,7 @@
 		30401361169BEE7C00ACF815 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3040133C169BEE7C00ACF815 /* Foundation.framework */; };
 		30401369169BEE7C00ACF815 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30401367169BEE7C00ACF815 /* InfoPlist.strings */; };
 		3040136C169BEE7C00ACF815 /* aoc2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3040136B169BEE7C00ACF815 /* aoc2Tests.m */; };
+		3062EF54169D114000A11D2E /* TextClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 3062EF53169D114000A11D2E /* TextClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		30401368169BEE7C00ACF815 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3040136A169BEE7C00ACF815 /* aoc2Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aoc2Tests.h; sourceTree = "<group>"; };
 		3040136B169BEE7C00ACF815 /* aoc2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = aoc2Tests.m; sourceTree = "<group>"; };
+		3062EF52169D114000A11D2E /* TextClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextClass.h; sourceTree = "<group>"; };
+		3062EF53169D114000A11D2E /* TextClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +126,8 @@
 				30401355169BEE7C00ACF815 /* ViewController.h */,
 				30401356169BEE7C00ACF815 /* ViewController.m */,
 				30401341169BEE7C00ACF815 /* Supporting Files */,
+				3062EF52169D114000A11D2E /* TextClass.h */,
+				3062EF53169D114000A11D2E /* TextClass.m */,
 			);
 			path = aoc2;
 			sourceTree = "<group>";
@@ -273,6 +278,7 @@
 				30401347169BEE7C00ACF815 /* main.m in Sources */,
 				3040134B169BEE7C00ACF815 /* AppDelegate.m in Sources */,
 				30401357169BEE7C00ACF815 /* ViewController.m in Sources */,
+				3062EF54169D114000A11D2E /* TextClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,6 +455,7 @@
 				30401371169BEE7C00ACF815 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		30401372169BEE7C00ACF815 /* Build configuration list for PBXNativeTarget "aoc2Tests" */ = {
 			isa = XCConfigurationList;
@@ -457,6 +464,7 @@
 				30401374169BEE7C00ACF815 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

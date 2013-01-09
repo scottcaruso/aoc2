@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TextClass.h"
 
 @interface ViewController : UIViewController
+{
+    UILabel *textLabel;
+    
+    TextClass *textClass;
+}
 
 @end
