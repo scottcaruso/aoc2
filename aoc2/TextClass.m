@@ -19,17 +19,6 @@
         intValue = 4;
         floatValue = 10.3f;
     }
-
     return self;
-}
-
--(NSString*)getText
-{
-    text = [NSString stringWithFormat:@"int = %d, float = %f",intValue,floatValue];
-    if (text != nil)
-    {
-        return text;
-    }
-    return nil;
 }
 @end

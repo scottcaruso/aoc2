@@ -17,7 +17,15 @@
 
 - (void)viewDidLoad
 {
-    textClass = [[TextClass alloc] init];
+    TextClass *test = [[TextClass alloc] init];
+    if (test != nil)
+    {
+        NSLog(@"The int value is %d and the float value is %f.",test->intValue,test->floatValue);
+        test->intValue = 45;
+        test->floatValue = 2.222;
+        NSLog(@"The int value is %d and the float value is %f.",test->intValue,test->floatValue);
+    }
+    /*textClass = [[TextClass alloc] init];
     if (textClass != nil)
     {
         
@@ -25,7 +33,7 @@
     //Week 1 - Practice work
     textLabel = [[UILabel alloc] initWithFrame:CGRectMake(0,0,320,100)];
     textLabel.text = [textClass getText];
-    [self.view addSubview:textLabel];
+    [self.view addSubview:textLabel];*/
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }

@@ -10,13 +10,11 @@
 
 @interface TextClass : NSObject
 {
+@private
     NSString *text;
-    
+@public
     int intValue;
-    
     float floatValue;
 }
-
--(NSString*)getText;
 
 @end
