@@ -10,4 +10,9 @@
 
 @implementation WrestlerFactory
 
++(Wrestlers *)createNewWrestler: (int)wrestlerID
+{
+    return [[WrestlerOne alloc] init];
+}
+
 @end

@@ -25,9 +25,9 @@
 		3040136C169BEE7C00ACF815 /* aoc2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3040136B169BEE7C00ACF815 /* aoc2Tests.m */; };
 		30FD89AE169E912100D88E18 /* WrestlerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FD89AD169E912100D88E18 /* WrestlerFactory.m */; };
 		30FD89B1169E913800D88E18 /* Wrestlers.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FD89B0169E913800D88E18 /* Wrestlers.m */; };
-		30FD89B4169E914A00D88E18 /* WrestlerOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FD89B3169E914900D88E18 /* WrestlerOne.m */; };
-		30FD89B7169E915300D88E18 /* WrestlerTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FD89B6169E915300D88E18 /* WrestlerTwo.m */; };
-		30FD89BA169E915C00D88E18 /* WrestlerThree.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FD89B9169E915C00D88E18 /* WrestlerThree.m */; };
+		30FD89B4169E914A00D88E18 /* TheCrusher.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FD89B3169E914900D88E18 /* TheCrusher.m */; };
+		30FD89B7169E915300D88E18 /* MachoDude.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FD89B6169E915300D88E18 /* MachoDude.m */; };
+		30FD89BA169E915C00D88E18 /* KidKaos.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FD89B9169E915C00D88E18 /* KidKaos.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,12 +67,12 @@
 		30FD89AD169E912100D88E18 /* WrestlerFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WrestlerFactory.m; sourceTree = "<group>"; };
 		30FD89AF169E913800D88E18 /* Wrestlers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wrestlers.h; sourceTree = "<group>"; };
 		30FD89B0169E913800D88E18 /* Wrestlers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Wrestlers.m; sourceTree = "<group>"; };
-		30FD89B2169E914900D88E18 /* WrestlerOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WrestlerOne.h; sourceTree = "<group>"; };
-		30FD89B3169E914900D88E18 /* WrestlerOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WrestlerOne.m; sourceTree = "<group>"; };
-		30FD89B5169E915300D88E18 /* WrestlerTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WrestlerTwo.h; sourceTree = "<group>"; };
-		30FD89B6169E915300D88E18 /* WrestlerTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WrestlerTwo.m; sourceTree = "<group>"; };
-		30FD89B8169E915C00D88E18 /* WrestlerThree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WrestlerThree.h; sourceTree = "<group>"; };
-		30FD89B9169E915C00D88E18 /* WrestlerThree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WrestlerThree.m; sourceTree = "<group>"; };
+		30FD89B2169E914900D88E18 /* TheCrusher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TheCrusher.h; sourceTree = "<group>"; };
+		30FD89B3169E914900D88E18 /* TheCrusher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TheCrusher.m; sourceTree = "<group>"; };
+		30FD89B5169E915300D88E18 /* MachoDude.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MachoDude.h; sourceTree = "<group>"; };
+		30FD89B6169E915300D88E18 /* MachoDude.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MachoDude.m; sourceTree = "<group>"; };
+		30FD89B8169E915C00D88E18 /* KidKaos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KidKaos.h; sourceTree = "<group>"; };
+		30FD89B9169E915C00D88E18 /* KidKaos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KidKaos.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,12 +142,12 @@
 				30FD89AD169E912100D88E18 /* WrestlerFactory.m */,
 				30FD89AF169E913800D88E18 /* Wrestlers.h */,
 				30FD89B0169E913800D88E18 /* Wrestlers.m */,
-				30FD89B2169E914900D88E18 /* WrestlerOne.h */,
-				30FD89B3169E914900D88E18 /* WrestlerOne.m */,
-				30FD89B5169E915300D88E18 /* WrestlerTwo.h */,
-				30FD89B6169E915300D88E18 /* WrestlerTwo.m */,
-				30FD89B8169E915C00D88E18 /* WrestlerThree.h */,
-				30FD89B9169E915C00D88E18 /* WrestlerThree.m */,
+				30FD89B2169E914900D88E18 /* TheCrusher.h */,
+				30FD89B3169E914900D88E18 /* TheCrusher.m */,
+				30FD89B5169E915300D88E18 /* MachoDude.h */,
+				30FD89B6169E915300D88E18 /* MachoDude.m */,
+				30FD89B8169E915C00D88E18 /* KidKaos.h */,
+				30FD89B9169E915C00D88E18 /* KidKaos.m */,
 			);
 			path = aoc2;
 			sourceTree = "<group>";
@@ -300,9 +300,9 @@
 				30401357169BEE7C00ACF815 /* ViewController.m in Sources */,
 				30FD89AE169E912100D88E18 /* WrestlerFactory.m in Sources */,
 				30FD89B1169E913800D88E18 /* Wrestlers.m in Sources */,
-				30FD89B4169E914A00D88E18 /* WrestlerOne.m in Sources */,
-				30FD89B7169E915300D88E18 /* WrestlerTwo.m in Sources */,
-				30FD89BA169E915C00D88E18 /* WrestlerThree.m in Sources */,
+				30FD89B4169E914A00D88E18 /* TheCrusher.m in Sources */,
+				30FD89B7169E915300D88E18 /* MachoDude.m in Sources */,
+				30FD89BA169E915C00D88E18 /* KidKaos.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

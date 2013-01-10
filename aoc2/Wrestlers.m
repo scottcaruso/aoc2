@@ -10,4 +10,20 @@
 
 @implementation Wrestlers
 
+@synthesize name,hometown,weight,numberOfWins,currentlyActive;
+
+-(id)init
+{
+    self = [super init];
+    if (self != nil)
+    {
+        [self setName:nil];
+        [self setHometown:nil];
+        [self setWeight:0];
+        [self setNumberOfWins:0];
+        [self setCurrentlyActive:FALSE];
+    }
+    return self;
+}
+
 @end

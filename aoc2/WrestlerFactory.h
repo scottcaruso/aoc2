@@ -7,7 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Wrestlers.h"
+#import "TheCrusher.h"
+#import "MachoDude.h"
+#import "KidKaos.h"
 
 @interface WrestlerFactory : NSObject
+
++(Wrestlers *)createNewWrestler: (int)wrestlerID;
 
 @end
