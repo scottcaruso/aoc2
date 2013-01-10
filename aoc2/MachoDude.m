@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 Scott Caruso. All rights reserved.
 //
 
-#import "WrestlerTwo.h"
+#import "MachoDude.h"
 
-@implementation WrestlerTwo
+@implementation MachoDude
 
 @end

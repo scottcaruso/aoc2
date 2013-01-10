@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "Wrestlers.h"
 
-@interface WrestlerTwo : Wrestlers
+@interface MachoDude : Wrestlers
 
 @end

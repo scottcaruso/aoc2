@@ -6,8 +6,13 @@
 //  Copyright (c) 2013 Scott Caruso. All rights reserved.
 //
 
-#import "WrestlerOne.h"
+#import "TheCrusher.h"
 
-@implementation WrestlerOne
+@implementation TheCrusher;
+@synthesize billedWeight,stageName;
 
+-(void)howMuchDoesHeWeigh
+{
+    NSLog(@"And weighing in tonight at %i pounds!",billedWeight);
+}
 @end

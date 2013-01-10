@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 Scott Caruso. All rights reserved.
 //
 
-#import "WrestlerThree.h"
+#import "KidKaos.h"
 
-@implementation WrestlerThree
+@implementation KidKaos
 
 @end

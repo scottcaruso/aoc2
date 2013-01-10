@@ -12,7 +12,7 @@
 
 +(Wrestlers *)createNewWrestler: (int)wrestlerID
 {
-    return [[WrestlerOne alloc] init];
+    return [[TheCrusher alloc] init];
 }
 
 @end

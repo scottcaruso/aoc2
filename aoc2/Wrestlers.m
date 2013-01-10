@@ -10,7 +10,7 @@
 
 @implementation Wrestlers
 
-@synthesize name,hometown,weight,numberOfWins,currentlyActive;
+@synthesize name,actualWeight,currentlyActive;
 
 -(id)init
 {
@@ -18,12 +18,15 @@
     if (self != nil)
     {
         [self setName:nil];
-        [self setHometown:nil];
-        [self setWeight:0];
-        [self setNumberOfWins:0];
+        [self setActualWeight:0];
         [self setCurrentlyActive:FALSE];
     }
     return self;
+}
+
+-(void)howMuchDoesHeWeigh
+{
+    NSLog(@"This wrestler currently weighs %i pounds.",actualWeight);
 }
 
 @end
