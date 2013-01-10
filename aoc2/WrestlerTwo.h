@@ -1,14 +1,14 @@
 //
-//  triangle.h
+//  WrestlerTwo.h
 //  aoc2
 //
-//  Created by Scott Caruso on 1/9/13.
+//  Created by Scott Caruso on 1/10/13.
 //  Copyright (c) 2013 Scott Caruso. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-#import "Shape.h"
+#import "Wrestlers.h"
 
-@interface TriangleShape : Shape;
+@interface WrestlerTwo : Wrestlers
 
 @end

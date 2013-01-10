@@ -23,10 +23,11 @@
 		30401361169BEE7C00ACF815 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3040133C169BEE7C00ACF815 /* Foundation.framework */; };
 		30401369169BEE7C00ACF815 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30401367169BEE7C00ACF815 /* InfoPlist.strings */; };
 		3040136C169BEE7C00ACF815 /* aoc2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3040136B169BEE7C00ACF815 /* aoc2Tests.m */; };
-		3062EF54169D114000A11D2E /* TextClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 3062EF53169D114000A11D2E /* TextClass.m */; };
-		30FD89A4169E693400D88E18 /* Shape.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FD89A3169E693400D88E18 /* Shape.m */; };
-		30FD89A8169E69EB00D88E18 /* TriangleShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FD89A7169E69EB00D88E18 /* TriangleShape.m */; };
-		30FD89AB169E6C3600D88E18 /* SquareShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FD89AA169E6C3600D88E18 /* SquareShape.m */; };
+		30FD89AE169E912100D88E18 /* WrestlerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FD89AD169E912100D88E18 /* WrestlerFactory.m */; };
+		30FD89B1169E913800D88E18 /* Wrestlers.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FD89B0169E913800D88E18 /* Wrestlers.m */; };
+		30FD89B4169E914A00D88E18 /* WrestlerOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FD89B3169E914900D88E18 /* WrestlerOne.m */; };
+		30FD89B7169E915300D88E18 /* WrestlerTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FD89B6169E915300D88E18 /* WrestlerTwo.m */; };
+		30FD89BA169E915C00D88E18 /* WrestlerThree.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FD89B9169E915C00D88E18 /* WrestlerThree.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,14 +63,16 @@
 		30401368169BEE7C00ACF815 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3040136A169BEE7C00ACF815 /* aoc2Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aoc2Tests.h; sourceTree = "<group>"; };
 		3040136B169BEE7C00ACF815 /* aoc2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = aoc2Tests.m; sourceTree = "<group>"; };
-		3062EF52169D114000A11D2E /* TextClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextClass.h; sourceTree = "<group>"; };
-		3062EF53169D114000A11D2E /* TextClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextClass.m; sourceTree = "<group>"; };
-		30FD89A2169E693400D88E18 /* Shape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shape.h; sourceTree = "<group>"; };
-		30FD89A3169E693400D88E18 /* Shape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shape.m; sourceTree = "<group>"; };
-		30FD89A6169E69EB00D88E18 /* TriangleShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriangleShape.h; sourceTree = "<group>"; };
-		30FD89A7169E69EB00D88E18 /* TriangleShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriangleShape.m; sourceTree = "<group>"; };
-		30FD89A9169E6C3600D88E18 /* SquareShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SquareShape.h; sourceTree = "<group>"; };
-		30FD89AA169E6C3600D88E18 /* SquareShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SquareShape.m; sourceTree = "<group>"; };
+		30FD89AC169E912100D88E18 /* WrestlerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WrestlerFactory.h; sourceTree = "<group>"; };
+		30FD89AD169E912100D88E18 /* WrestlerFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WrestlerFactory.m; sourceTree = "<group>"; };
+		30FD89AF169E913800D88E18 /* Wrestlers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wrestlers.h; sourceTree = "<group>"; };
+		30FD89B0169E913800D88E18 /* Wrestlers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Wrestlers.m; sourceTree = "<group>"; };
+		30FD89B2169E914900D88E18 /* WrestlerOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WrestlerOne.h; sourceTree = "<group>"; };
+		30FD89B3169E914900D88E18 /* WrestlerOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WrestlerOne.m; sourceTree = "<group>"; };
+		30FD89B5169E915300D88E18 /* WrestlerTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WrestlerTwo.h; sourceTree = "<group>"; };
+		30FD89B6169E915300D88E18 /* WrestlerTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WrestlerTwo.m; sourceTree = "<group>"; };
+		30FD89B8169E915C00D88E18 /* WrestlerThree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WrestlerThree.h; sourceTree = "<group>"; };
+		30FD89B9169E915C00D88E18 /* WrestlerThree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WrestlerThree.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,14 +138,16 @@
 				30401355169BEE7C00ACF815 /* ViewController.h */,
 				30401356169BEE7C00ACF815 /* ViewController.m */,
 				30401341169BEE7C00ACF815 /* Supporting Files */,
-				3062EF52169D114000A11D2E /* TextClass.h */,
-				3062EF53169D114000A11D2E /* TextClass.m */,
-				30FD89A2169E693400D88E18 /* Shape.h */,
-				30FD89A3169E693400D88E18 /* Shape.m */,
-				30FD89A6169E69EB00D88E18 /* TriangleShape.h */,
-				30FD89A7169E69EB00D88E18 /* TriangleShape.m */,
-				30FD89A9169E6C3600D88E18 /* SquareShape.h */,
-				30FD89AA169E6C3600D88E18 /* SquareShape.m */,
+				30FD89AC169E912100D88E18 /* WrestlerFactory.h */,
+				30FD89AD169E912100D88E18 /* WrestlerFactory.m */,
+				30FD89AF169E913800D88E18 /* Wrestlers.h */,
+				30FD89B0169E913800D88E18 /* Wrestlers.m */,
+				30FD89B2169E914900D88E18 /* WrestlerOne.h */,
+				30FD89B3169E914900D88E18 /* WrestlerOne.m */,
+				30FD89B5169E915300D88E18 /* WrestlerTwo.h */,
+				30FD89B6169E915300D88E18 /* WrestlerTwo.m */,
+				30FD89B8169E915C00D88E18 /* WrestlerThree.h */,
+				30FD89B9169E915C00D88E18 /* WrestlerThree.m */,
 			);
 			path = aoc2;
 			sourceTree = "<group>";
@@ -293,10 +298,11 @@
 				30401347169BEE7C00ACF815 /* main.m in Sources */,
 				3040134B169BEE7C00ACF815 /* AppDelegate.m in Sources */,
 				30401357169BEE7C00ACF815 /* ViewController.m in Sources */,
-				3062EF54169D114000A11D2E /* TextClass.m in Sources */,
-				30FD89A4169E693400D88E18 /* Shape.m in Sources */,
-				30FD89A8169E69EB00D88E18 /* TriangleShape.m in Sources */,
-				30FD89AB169E6C3600D88E18 /* SquareShape.m in Sources */,
+				30FD89AE169E912100D88E18 /* WrestlerFactory.m in Sources */,
+				30FD89B1169E913800D88E18 /* Wrestlers.m in Sources */,
+				30FD89B4169E914A00D88E18 /* WrestlerOne.m in Sources */,
+				30FD89B7169E915300D88E18 /* WrestlerTwo.m in Sources */,
+				30FD89BA169E915C00D88E18 /* WrestlerThree.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
