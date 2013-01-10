@@ -13,8 +13,11 @@
 @private
     NSString *text;
 @public
-    int intValue;
+    NSInteger intValue;
     float floatValue;
 }
+
+-(void)setInt:(NSInteger)tempValue;
++(void)printInt:(NSInteger)value;
 
 @end

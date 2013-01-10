@@ -21,4 +21,15 @@
     }
     return self;
 }
+
+-(void)setInt:(NSInteger)tempValue
+{
+    intValue = tempValue;
+}
+
++(void)printInt:(NSInteger)value
+{
+    NSLog(@"value=%d",value);
+}
+
 @end
