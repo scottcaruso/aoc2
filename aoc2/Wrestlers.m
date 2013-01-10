@@ -10,7 +10,7 @@
 
 @implementation Wrestlers
 
-@synthesize name,actualWeight,currentlyActive;
+@synthesize name,contractYears,annualValue,currentlyActive;
 
 -(id)init
 {
@@ -18,15 +18,17 @@
     if (self != nil)
     {
         [self setName:nil];
-        [self setActualWeight:0];
-        [self setCurrentlyActive:FALSE];
+        [self setContractYears:0];
+        [self setAnnualValue:0];
+        [self setCurrentlyActive:nil];
     }
     return self;
 }
 
--(void)howMuchDoesHeWeigh
+-(void)valueOfContract
 {
-    NSLog(@"This wrestler currently weighs %i pounds.",actualWeight);
+    int totalValue = contractYears * annualValue;
+    NSLog(@"This wrestler's contract will cost the company %i dollars over the next %i years.",totalValue,contractYears);
 }
 
 @end

@@ -20,14 +20,15 @@ typedef enum {
 } wrestlerEnum;
 
 //various data properties for the wrestlers
-@property NSString *name; //what is the wrestler's real name?
-@property bool *currentlyActive; //is the wrestler currently active on the roster?
-@property int actualWeight; //the number of pounds the wrestler actually is
+@property NSString *name; //what is the wrestler's name?
+@property BOOL currentlyActive; //is the wrestler currently active on the roster?
+@property int contractYears; //the number of years the wrestler has left on his contract
+@property int annualValue; //the amount of money the wrestler costs per year
 
 // initialize the data
 -(id) init;
 
-// what is the wrestler's weight?
--(void)howMuchDoesHeWeigh;
+// how much does this wrestler cost to keep under contract?
+-(void)valueOfContract;
 
 @end

@@ -11,13 +11,13 @@
 
 @interface TheCrusher : Wrestlers
 
-//property to determine "billed" weight of the wrestler - what the announcers say he weighs rather than what he actually weighs
-@property int billedWeight;
-//property to determine the stage name of hte wrestlier - what the wrestler is called rather than what his real life name is
-@property NSString *stageName;
+//property to determine any bonus the wrestler is paid
+@property int contractBonus;
+//property to determine if bonus is yearly or one lump sump. TRUE = yearly
+@property bool isBonusYearly;
 
 //override the actualweight calculation with billed weight instead
--(void)howMuchDoesHeWeigh;
+-(void)valueOfContract;
 
 
 @end
