@@ -8,6 +8,9 @@
 
 #import "ViewController.h"
 #import "TextClass.h"
+#import "Shape.h"
+#import "TriangleShape.h"
+#import "SquareShape.h"
 
 @interface ViewController ()
 
@@ -17,23 +20,16 @@
 
 - (void)viewDidLoad
 {
-    TextClass *test = [[TextClass alloc] init];
-    if (test != nil)
+    TriangleShape *triangle = [[TriangleShape alloc] init];
+    if (triangle != nil)
     {
-        NSLog(@"The int value is %d and the float value is %f.",test->intValue,test->floatValue);
-        test->intValue = 45;
-        test->floatValue = 2.222;
-        NSLog(@"The int value is %d and the float value is %f.",test->intValue,test->floatValue);
+        [triangle printNumSides];
     }
-    /*textClass = [[TextClass alloc] init];
-    if (textClass != nil)
+    SquareShape *square = [[SquareShape alloc] init];
+    if (square != nil)
     {
-        
+        [square printNumSides];
     }
-    //Week 1 - Practice work
-    textLabel = [[UILabel alloc] initWithFrame:CGRectMake(0,0,320,100)];
-    textLabel.text = [textClass getText];
-    [self.view addSubview:textLabel];*/
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }

@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "TextClass.h"
+#import "Shape.h"
+#import "TriangleShape.h"
+#import "SquareShape.h"
 
 @interface ViewController : UIViewController
 {

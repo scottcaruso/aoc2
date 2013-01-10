@@ -24,6 +24,9 @@
 		30401369169BEE7C00ACF815 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30401367169BEE7C00ACF815 /* InfoPlist.strings */; };
 		3040136C169BEE7C00ACF815 /* aoc2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3040136B169BEE7C00ACF815 /* aoc2Tests.m */; };
 		3062EF54169D114000A11D2E /* TextClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 3062EF53169D114000A11D2E /* TextClass.m */; };
+		30FD89A4169E693400D88E18 /* Shape.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FD89A3169E693400D88E18 /* Shape.m */; };
+		30FD89A8169E69EB00D88E18 /* TriangleShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FD89A7169E69EB00D88E18 /* TriangleShape.m */; };
+		30FD89AB169E6C3600D88E18 /* SquareShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FD89AA169E6C3600D88E18 /* SquareShape.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,12 @@
 		3040136B169BEE7C00ACF815 /* aoc2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = aoc2Tests.m; sourceTree = "<group>"; };
 		3062EF52169D114000A11D2E /* TextClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextClass.h; sourceTree = "<group>"; };
 		3062EF53169D114000A11D2E /* TextClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextClass.m; sourceTree = "<group>"; };
+		30FD89A2169E693400D88E18 /* Shape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shape.h; sourceTree = "<group>"; };
+		30FD89A3169E693400D88E18 /* Shape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shape.m; sourceTree = "<group>"; };
+		30FD89A6169E69EB00D88E18 /* TriangleShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriangleShape.h; sourceTree = "<group>"; };
+		30FD89A7169E69EB00D88E18 /* TriangleShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriangleShape.m; sourceTree = "<group>"; };
+		30FD89A9169E6C3600D88E18 /* SquareShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SquareShape.h; sourceTree = "<group>"; };
+		30FD89AA169E6C3600D88E18 /* SquareShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SquareShape.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +137,12 @@
 				30401341169BEE7C00ACF815 /* Supporting Files */,
 				3062EF52169D114000A11D2E /* TextClass.h */,
 				3062EF53169D114000A11D2E /* TextClass.m */,
+				30FD89A2169E693400D88E18 /* Shape.h */,
+				30FD89A3169E693400D88E18 /* Shape.m */,
+				30FD89A6169E69EB00D88E18 /* TriangleShape.h */,
+				30FD89A7169E69EB00D88E18 /* TriangleShape.m */,
+				30FD89A9169E6C3600D88E18 /* SquareShape.h */,
+				30FD89AA169E6C3600D88E18 /* SquareShape.m */,
 			);
 			path = aoc2;
 			sourceTree = "<group>";
@@ -279,6 +294,9 @@
 				3040134B169BEE7C00ACF815 /* AppDelegate.m in Sources */,
 				30401357169BEE7C00ACF815 /* ViewController.m in Sources */,
 				3062EF54169D114000A11D2E /* TextClass.m in Sources */,
+				30FD89A4169E693400D88E18 /* Shape.m in Sources */,
+				30FD89A8169E69EB00D88E18 /* TriangleShape.m in Sources */,
+				30FD89AB169E6C3600D88E18 /* SquareShape.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
