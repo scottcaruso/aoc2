@@ -93,7 +93,14 @@
         [carsBase setTextColor:[UIColor whiteColor]];
         [self.view addSubview:carsBase];
     }
-    teddyBearModified = [[UILabel alloc] initWithFrame:CGRectMake(70.0f, 455.0f, 610.0f, 80.0f)];
+    //Modified classes
+    modifiedClasses = [[UILabel alloc] initWithFrame:CGRectMake(300.0f, 335.0f, 155.0f, 30.0f)];
+    if (modifiedClasses != nil)
+    {
+        modifiedClasses.text = @"Modified subclasses";
+        [self.view addSubview:modifiedClasses];
+    }
+    teddyBearModified = [[UILabel alloc] initWithFrame:CGRectMake(70.0f, 370.0f, 610.0f, 80.0f)];
     if (teddyBearModified != nil)
     {
         teddyBearModified.text = onSaleTeddyBearText;
@@ -103,7 +110,7 @@
         [teddyBearModified setTextColor:[UIColor whiteColor]];
         [self.view addSubview:teddyBearModified];
     }
-    blocksModified = [[UILabel alloc] initWithFrame:CGRectMake(70.0f, 555.0f, 610.0f, 80.0f)];
+    blocksModified = [[UILabel alloc] initWithFrame:CGRectMake(70.0f, 470.0f, 610.0f, 80.0f)];
     if (blocksModified != nil)
     {
         blocksModified.text = oversizedBlockToyText;
@@ -113,7 +120,7 @@
         [blocksModified setTextColor:[UIColor whiteColor]];
         [self.view addSubview:blocksModified];
     }
-    carsModified = [[UILabel alloc] initWithFrame:CGRectMake(70.0f, 655.0f, 610.0f, 80.0f)];
+    carsModified = [[UILabel alloc] initWithFrame:CGRectMake(70.0f, 570.0f, 610.0f, 80.0f)];
     if (carsModified != nil)
     {
         carsModified.text = specialEditionCarToyText;

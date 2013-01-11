@@ -43,7 +43,7 @@
     NSString *formattedPrice = [NSString stringWithFormat:@"%.02f",salePrice];
     NSString *formattedShipping = [NSString stringWithFormat:@"%.02f",self.priceToShip];
     NSString *formattedCost = [NSString stringWithFormat:@"%.02f",totalCost];
-    NSString *result = [NSString stringWithFormat:@"This %@ toy is on sale for %@, with a shipping cost of %@. The total customer cost is %@.",self.name,formattedPrice,formattedShipping,formattedCost];
+    NSString *result = [NSString stringWithFormat:@"This %@ toy is on sale for $%@, with a shipping cost of $%@. The total customer cost is $%@.",self.name,formattedPrice,formattedShipping,formattedCost];
     return result;
 }
 
