@@ -20,15 +20,14 @@ typedef enum {
 } toyEnum;
 
 //various data properties for the wrestlers
-@property NSString *name; //what is the wrestler's name?
-@property BOOL currentlyActive; //is the wrestler currently active on the roster?
-@property int contractYears; //the number of years the wrestler has left on his contract
-@property int annualValue; //the amount of money the wrestler costs per year
+@property NSString *name; //what is the toy called?
+@property float retailPrice; //what is this toy's retail price?
+@property float priceToShip; //how much does this toy cost to ship?
 
 // initialize the data
 -(id) init;
 
-// how much does this wrestler cost to keep under contract?
--(void)valueOfContract;
+// how much does this toy cost a customer to order?
+-(void)costToPurchaseToy;
 
 @end

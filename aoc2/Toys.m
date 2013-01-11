@@ -10,7 +10,7 @@
 
 @implementation Toys
 
-@synthesize name,contractYears,annualValue,currentlyActive;
+@synthesize name,retailPrice,priceToShip;
 
 -(id)init
 {
@@ -18,17 +18,20 @@
     if (self != nil)
     {
         [self setName:nil];
-        [self setContractYears:0];
-        [self setAnnualValue:0];
-        [self setCurrentlyActive:TRUE];
+        [self setRetailPrice:0.00];
+        [self setPriceToShip:4.95];
     }
     return self;
 }
 
--(void)valueOfContract
+-(void)costToPurchaseToy;
 {
-    int totalValue = contractYears * annualValue;
-    NSLog(@"This wrestler's contract will cost the company %i dollars over the next %i years.",totalValue,contractYears);
+    float totalCost;
+    totalCost = retailPrice + priceToShip;
+    NSString *formattedPrice = [NSString stringWithFormat:@"%.02f",totalCost];
+    NSString *formattedShipping = [NSString stringWithFormat:@"%.02f",totalCost];
+    NSString *formattedCost = [NSString stringWithFormat:@"%.02f",totalCost];
+    NSLog(@"This toy costs %@, with a shipping cost of %@. The total customer cost is %@.",formattedPrice,formattedShipping,formattedCost);
 }
 
 @end
