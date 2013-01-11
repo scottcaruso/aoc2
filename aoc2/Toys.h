@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Toys : NSObject
+@interface Toys: NSObject
 {
     int toyEnum;
 }
@@ -19,7 +19,7 @@ typedef enum {
     CARS
 } toyEnum;
 
-//various data properties for the wrestlers
+//various data properties for the toys
 @property NSString *name; //what is the toy called?
 @property float retailPrice; //what is this toy's retail price?
 @property float priceToShip; //how much does this toy cost to ship?
