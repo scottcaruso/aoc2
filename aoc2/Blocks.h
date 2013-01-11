@@ -16,6 +16,6 @@
 @property int weightOfToy;
 
 //override the cost if on sale
--(void)costToPurchaseToy;
+-(NSString *)costToPurchaseToy;
 
 @end

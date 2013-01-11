@@ -24,14 +24,15 @@
     return self;
 }
 
--(void)costToPurchaseToy;
+-(NSString *)costToPurchaseToy;
 {
     float totalCost;
     totalCost = retailPrice + priceToShip;
     NSString *formattedPrice = [NSString stringWithFormat:@"%.02f",retailPrice];
     NSString *formattedShipping = [NSString stringWithFormat:@"%.02f",priceToShip];
     NSString *formattedCost = [NSString stringWithFormat:@"%.02f",totalCost];
-    NSLog(@"This toy costs %@, with a shipping cost of %@. The total customer cost is %@.",formattedPrice,formattedShipping,formattedCost);
+    NSString *result = [NSString stringWithFormat:@"The %@ costs $%@, with a shipping cost of $%@. The total customer cost is $%@.",self.name,formattedPrice,formattedShipping,formattedCost];
+    return result;
 }
 
 @end

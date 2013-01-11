@@ -28,6 +28,6 @@ typedef enum {
 -(id)init;
 
 // how much does this toy cost a customer to order?
--(void)costToPurchaseToy;
+-(NSString *)costToPurchaseToy;
 
 @end

@@ -11,7 +11,14 @@
 
 @interface ViewController : UIViewController
 {
-    UILabel *textLabel;
+    UILabel *baseClasses;
+    UILabel *teddyBearBase;
+    UILabel *blocksBase;
+    UILabel *carsBase;
+    UILabel *modifiedClasses;
+    UILabel *teddyBearModified;
+    UILabel *blocksModified;
+    UILabel *carsModified;
 }
 
 @end

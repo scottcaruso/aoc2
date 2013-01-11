@@ -15,6 +15,6 @@
 @property NSString* whichEditionIsThis;
 
 //override the cost if a special edition is being sold
--(void)costToPurchaseToy;
+-(NSString *)costToPurchaseToy;
 
 @end

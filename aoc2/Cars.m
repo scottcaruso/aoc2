@@ -12,28 +12,29 @@
 
 @synthesize whichEditionIsThis;
 
-//Base "Blocks" init
+//Base "Cars" init
 -(id)init
 {
     self = [super init];
     if (self != nil)
     {
-        //[self setRetailPrice:19.95];
-        //[self setWhichEditionIsThis:@"Limited"];
+        [self setName:@"Toy Cars"];
+        [self setRetailPrice:19.95];
+        [self setWhichEditionIsThis:@"Limited"];
     }
     return self;
 }
 
--(void)costToPurchaseToy;
+-(NSString*)costToPurchaseToy;
 {
     if (whichEditionIsThis == @"Regular")
     {
-        NSLog(@"There is no additional charge for %@ edition toys.",whichEditionIsThis);
-        [super costToPurchaseToy];
+        //NSLog(@"There is no additional charge for %@ edition toys.",whichEditionIsThis);
+        return [super costToPurchaseToy];
     }
     else if (whichEditionIsThis == @"Limited")
     {
-        NSLog(@"We require insurance of $9.99 be purchased for all Limited edition shipments.");
+        //NSLog(@"We require insurance of $9.99 be purchased for all Limited edition shipments.");
         float totalPrice;
         totalPrice = self.retailPrice + 9.99;
         float totalCost;
@@ -41,7 +42,8 @@
         NSString *priceWithInsurance = [NSString stringWithFormat:@"%.02f",totalPrice];
         NSString *formattedShipping = [NSString stringWithFormat:@"%.02f",self.priceToShip];
         NSString *formattedCost = [NSString stringWithFormat:@"%.02f",totalCost];
-        NSLog(@"With the mandatory %@ edition insurance purchase, the total price of this item is $%@. The total cost to the customer is $%@, after a $%@ shipping cost.",whichEditionIsThis,priceWithInsurance,formattedCost,formattedShipping);
+        NSString *result = [NSString stringWithFormat:@"With the mandatory %@ edition insurance purchase, the total price of the %@ is $%@. The total cost to the customer is $%@, after a $%@ shipping cost.",whichEditionIsThis,self.name,priceWithInsurance,formattedCost,formattedShipping];
+        return result;
     }
     else if (whichEditionIsThis == @"Special")
     {
@@ -53,13 +55,15 @@
         NSString *priceWithInsurance = [NSString stringWithFormat:@"%.02f",totalPrice];
         NSString *formattedShipping = [NSString stringWithFormat:@"%.02f",self.priceToShip];
         NSString *formattedCost = [NSString stringWithFormat:@"%.02f",totalCost];
-        NSLog(@"With the mandatory %@ edition insurance purchase, the total price of this item is $%@. The total cost to the customer is $%@, after a $%@ shipping cost.",whichEditionIsThis,priceWithInsurance,formattedCost,formattedShipping);
+        NSString *result = [NSString stringWithFormat:@"With the mandatory %@ edition insurance purchase, the total price of the %@ is $%@. The total cost to the customer is $%@, after a $%@ shipping cost.",whichEditionIsThis,self.name,priceWithInsurance,formattedCost,formattedShipping];
+        return result;
     }
     else
     {
-        NSLog(@"A valid edition was not entered. Reverted to standard shipping rates.");
-        [super costToPurchaseToy];
+        //NSLog(@"A valid edition was not entered. Reverted to standard shipping rates.");
+        return [super costToPurchaseToy];
     }
+    return nil;
 }
 
 @end

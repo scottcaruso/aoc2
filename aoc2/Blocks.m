@@ -17,19 +17,20 @@
     self = [super init];
     if (self != nil)
     {
-        //[self setRetailPrice:29.99];
-        //[self setIsOverweight:TRUE];
-        //[self setWeightOfToy:25];
+        [self setName:@"Building Blocks"];
+        [self setRetailPrice:29.99];
+        [self setIsOverweight:TRUE];
+        [self setWeightOfToy:25];
     }
     return self;
 }
 
 //Overriding the original Purchase Toy method since this toy is on sale
--(void)costToPurchaseToy
+-(NSString *)costToPurchaseToy
 {
     if (isOverweight == TRUE)
     {
-        NSLog(@"Shipping on over-sized items costs an extra $.50 per pound over 5 pounds!");
+       //NSLog(@"Shipping on over-sized items costs an extra $.50 per pound over 5 pounds!");
         if (weightOfToy > 5)
         {
             int howManyPoundsOverweight;
@@ -42,18 +43,22 @@
             NSString *formattedShipping = [NSString stringWithFormat:@"%.02f",shippingCost];
             NSString *formattedCost = [NSString stringWithFormat:@"%.02f",totalCost];
             NSString *formattedBaseShipping = [NSString stringWithFormat:@"%.02f",super.priceToShip];
-            NSLog(@"This toy is %i pounds overweight, which means that it costs $%@ to ship rather than the standard $%@. At a retail price of $%@, that brings the total cost to $%@.",howManyPoundsOverweight,formattedShipping,formattedBaseShipping,formattedPrice,formattedCost);
+            NSString *result = [NSString stringWithFormat:@"The %@ are %i pounds overweight, which means that it costs $%@ to ship rather than the standard $%@. At a retail price of $%@, that brings the total cost to $%@.",self.name,howManyPoundsOverweight,formattedShipping,formattedBaseShipping,formattedPrice,formattedCost];
+            return result;
         }
         else
         {
-            NSLog(@"Standard shipping rates apply to items under 5 pounds.");
-            [super costToPurchaseToy];
+            NSString *underWeight = [NSString stringWithFormat:@"Since this object only weighs %i pounds, it qualifies for standard shipping.",weightOfToy];
+            NSString *costString = [super costToPurchaseToy];
+            NSString *result = [NSString stringWithFormat:@"%@ %@",underWeight,costString];
+        return result;
         }
     }
     else
     {
-        [super costToPurchaseToy];
+        return [super costToPurchaseToy];
     }
+    return nil;
 }
 
 @end

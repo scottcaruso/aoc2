@@ -17,14 +17,15 @@
     self = [super init];
     if (self != nil)
     {
-        //[self setRetailPrice:9.99];
-        //[self setIsOnSale:TRUE];
+        [self setName:@"Teddy Bear"];
+        [self setRetailPrice:9.99];
+        [self setIsOnSale:FALSE];
     }
     return self;
 }
 
 //Overriding the original Purchase Toy method since this toy is on sale
--(void)costToPurchaseToy
+-(NSString *)costToPurchaseToy
 {
     float salePercentage;
     if (self.isOnSale == TRUE)
@@ -42,7 +43,8 @@
     NSString *formattedPrice = [NSString stringWithFormat:@"%.02f",salePrice];
     NSString *formattedShipping = [NSString stringWithFormat:@"%.02f",self.priceToShip];
     NSString *formattedCost = [NSString stringWithFormat:@"%.02f",totalCost];
-    NSLog(@"This toy is on sale for %@, with a shipping cost of %@. The total customer cost is %@.",formattedPrice,formattedShipping,formattedCost);
+    NSString *result = [NSString stringWithFormat:@"This %@ toy is on sale for %@, with a shipping cost of %@. The total customer cost is %@.",self.name,formattedPrice,formattedShipping,formattedCost];
+    return result;
 }
 
 @end
