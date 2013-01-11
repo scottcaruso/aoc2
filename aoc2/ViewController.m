@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "Toys.h"
 #import "TeddyBear.h"
+#import "Blocks.h"
 
 @interface ViewController ()
 
@@ -22,7 +23,11 @@
     toys.costToPurchaseToy;
     TeddyBear *teddyBear = [[TeddyBear alloc] init];
     teddyBear.costToPurchaseToy;
+    Blocks *blocks = [[Blocks alloc] init];
+    blocks.costToPurchaseToy;
+    
     [super viewDidLoad];
+    
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

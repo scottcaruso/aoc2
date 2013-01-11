@@ -23,7 +23,7 @@
     return self;
 }
 
-//Overriding the original Value of Contract method since this wrestler has a bonus as well
+//Overriding the original Purchase Toy method since this toy is on sale
 -(void)costToPurchaseToy
 {
     float salePercentage;

@@ -11,4 +11,11 @@
 
 @interface Blocks : Toys
 
+//property to determine additional shipping charges
+@property BOOL isOverweight;
+@property int weightOfToy;
+
+//override the cost if on sale
+-(void)costToPurchaseToy;
+
 @end
