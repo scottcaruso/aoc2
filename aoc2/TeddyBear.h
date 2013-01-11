@@ -11,13 +11,10 @@
 
 @interface TeddyBear : Toys
 
-//property to determine any bonus the wrestler is paid
-@property int contractBonus;
-//property to determine if bonus is yearly or one lump sump. TRUE = yearly
-@property bool isBonusYearly;
+//property to determine if toy is on sale
+@property BOOL isOnSale;
 
-//override the actualweight calculation with billed weight instead
--(void)valueOfContract;
-
+//override the cost if on sale
+-(void)costToPurchaseToy;
 
 @end
