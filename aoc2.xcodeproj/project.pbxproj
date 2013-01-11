@@ -23,6 +23,11 @@
 		30401361169BEE7C00ACF815 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3040133C169BEE7C00ACF815 /* Foundation.framework */; };
 		30401369169BEE7C00ACF815 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30401367169BEE7C00ACF815 /* InfoPlist.strings */; };
 		3040136C169BEE7C00ACF815 /* aoc2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3040136B169BEE7C00ACF815 /* aoc2Tests.m */; };
+		30FD89AE169E912100D88E18 /* ToyFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FD89AD169E912100D88E18 /* ToyFactory.m */; };
+		30FD89B1169E913800D88E18 /* Toys.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FD89B0169E913800D88E18 /* Toys.m */; };
+		30FD89B4169E914A00D88E18 /* TeddyBear.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FD89B3169E914900D88E18 /* TeddyBear.m */; };
+		30FD89B7169E915300D88E18 /* Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FD89B6169E915300D88E18 /* Blocks.m */; };
+		30FD89BA169E915C00D88E18 /* Cars.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FD89B9169E915C00D88E18 /* Cars.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +63,16 @@
 		30401368169BEE7C00ACF815 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3040136A169BEE7C00ACF815 /* aoc2Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aoc2Tests.h; sourceTree = "<group>"; };
 		3040136B169BEE7C00ACF815 /* aoc2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = aoc2Tests.m; sourceTree = "<group>"; };
+		30FD89AC169E912100D88E18 /* ToyFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToyFactory.h; sourceTree = "<group>"; };
+		30FD89AD169E912100D88E18 /* ToyFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToyFactory.m; sourceTree = "<group>"; };
+		30FD89AF169E913800D88E18 /* Toys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Toys.h; sourceTree = "<group>"; };
+		30FD89B0169E913800D88E18 /* Toys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Toys.m; sourceTree = "<group>"; };
+		30FD89B2169E914900D88E18 /* TeddyBear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeddyBear.h; sourceTree = "<group>"; };
+		30FD89B3169E914900D88E18 /* TeddyBear.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeddyBear.m; sourceTree = "<group>"; };
+		30FD89B5169E915300D88E18 /* Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Blocks.h; sourceTree = "<group>"; };
+		30FD89B6169E915300D88E18 /* Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Blocks.m; sourceTree = "<group>"; };
+		30FD89B8169E915C00D88E18 /* Cars.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cars.h; sourceTree = "<group>"; };
+		30FD89B9169E915C00D88E18 /* Cars.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cars.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +138,16 @@
 				30401355169BEE7C00ACF815 /* ViewController.h */,
 				30401356169BEE7C00ACF815 /* ViewController.m */,
 				30401341169BEE7C00ACF815 /* Supporting Files */,
+				30FD89AC169E912100D88E18 /* ToyFactory.h */,
+				30FD89AD169E912100D88E18 /* ToyFactory.m */,
+				30FD89AF169E913800D88E18 /* Toys.h */,
+				30FD89B0169E913800D88E18 /* Toys.m */,
+				30FD89B2169E914900D88E18 /* TeddyBear.h */,
+				30FD89B3169E914900D88E18 /* TeddyBear.m */,
+				30FD89B5169E915300D88E18 /* Blocks.h */,
+				30FD89B6169E915300D88E18 /* Blocks.m */,
+				30FD89B8169E915C00D88E18 /* Cars.h */,
+				30FD89B9169E915C00D88E18 /* Cars.m */,
 			);
 			path = aoc2;
 			sourceTree = "<group>";
@@ -273,6 +298,11 @@
 				30401347169BEE7C00ACF815 /* main.m in Sources */,
 				3040134B169BEE7C00ACF815 /* AppDelegate.m in Sources */,
 				30401357169BEE7C00ACF815 /* ViewController.m in Sources */,
+				30FD89AE169E912100D88E18 /* ToyFactory.m in Sources */,
+				30FD89B1169E913800D88E18 /* Toys.m in Sources */,
+				30FD89B4169E914A00D88E18 /* TeddyBear.m in Sources */,
+				30FD89B7169E915300D88E18 /* Blocks.m in Sources */,
+				30FD89BA169E915C00D88E18 /* Cars.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,6 +479,7 @@
 				30401371169BEE7C00ACF815 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		30401372169BEE7C00ACF815 /* Build configuration list for PBXNativeTarget "aoc2Tests" */ = {
 			isa = XCConfigurationList;
@@ -457,6 +488,7 @@
 				30401374169BEE7C00ACF815 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
