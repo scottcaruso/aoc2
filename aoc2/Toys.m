@@ -28,8 +28,8 @@
 {
     float totalCost;
     totalCost = retailPrice + priceToShip;
-    NSString *formattedPrice = [NSString stringWithFormat:@"%.02f",totalCost];
-    NSString *formattedShipping = [NSString stringWithFormat:@"%.02f",totalCost];
+    NSString *formattedPrice = [NSString stringWithFormat:@"%.02f",retailPrice];
+    NSString *formattedShipping = [NSString stringWithFormat:@"%.02f",priceToShip];
     NSString *formattedCost = [NSString stringWithFormat:@"%.02f",totalCost];
     NSLog(@"This toy costs %@, with a shipping cost of %@. The total customer cost is %@.",formattedPrice,formattedShipping,formattedCost);
 }

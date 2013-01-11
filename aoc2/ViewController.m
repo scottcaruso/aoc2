@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Toys.h"
 
 @interface ViewController ()
 
@@ -16,6 +17,8 @@
 
 - (void)viewDidLoad
 {
+    Toys *toys = [[Toys alloc] init];
+    toys.costToPurchaseToy;
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
