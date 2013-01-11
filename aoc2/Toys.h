@@ -25,7 +25,7 @@ typedef enum {
 @property float priceToShip; //how much does this toy cost to ship?
 
 // initialize the data
--(id) init;
+-(id)init;
 
 // how much does this toy cost a customer to order?
 -(void)costToPurchaseToy;

@@ -18,8 +18,8 @@
     self = [super init];
     if (self != nil)
     {
-        [self setRetailPrice:19.95];
-        [self setWhichEditionIsThis:@"Limited"];
+        //[self setRetailPrice:19.95];
+        //[self setWhichEditionIsThis:@"Limited"];
     }
     return self;
 }

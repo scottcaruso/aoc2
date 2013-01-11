@@ -17,9 +17,9 @@
     self = [super init];
     if (self != nil)
     {
-        [self setRetailPrice:29.99];
-        [self setIsOverweight:TRUE];
-        [self setWeightOfToy:25];
+        //[self setRetailPrice:29.99];
+        //[self setIsOverweight:TRUE];
+        //[self setWeightOfToy:25];
     }
     return self;
 }

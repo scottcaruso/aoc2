@@ -17,8 +17,8 @@
     self = [super init];
     if (self != nil)
     {
-        [self setRetailPrice:9.99];
-        [self setIsOnSale:TRUE];
+        //[self setRetailPrice:9.99];
+        //[self setIsOnSale:TRUE];
     }
     return self;
 }

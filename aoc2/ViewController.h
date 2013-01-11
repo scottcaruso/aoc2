@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ToyFactory.h"
 
 @interface ViewController : UIViewController
 {
