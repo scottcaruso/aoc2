@@ -1,5 +1,5 @@
 //
-//  WrestlerFactory.h
+//  ToyFactory.h
 //  aoc2
 //
 //  Created by Scott Caruso on 1/10/13.
@@ -7,13 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Wrestlers.h"
-#import "TheCrusher.h"
-#import "MachoDude.h"
-#import "KidKaos.h"
+#import "Toys.h"
+#import "TeddyBear.h"
+#import "Blocks.h"
+#import "Cars.h"
 
-@interface WrestlerFactory : NSObject
+@interface ToyFactory : NSObject
 
-+(Wrestlers *)createNewWrestler: (int)wrestlerID;
++(Toys *)createNewToy: (int)toyID;
 
 @end

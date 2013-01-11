@@ -1,14 +1,14 @@
 //
-//  Wrestlers.m
+//  Toys.m
 //  aoc2
 //
 //  Created by Scott Caruso on 1/10/13.
 //  Copyright (c) 2013 Scott Caruso. All rights reserved.
 //
 
-#import "Wrestlers.h"
+#import "Toys.h"
 
-@implementation Wrestlers
+@implementation Toys
 
 @synthesize name,contractYears,annualValue,currentlyActive;
 
@@ -20,7 +20,7 @@
         [self setName:nil];
         [self setContractYears:0];
         [self setAnnualValue:0];
-        [self setCurrentlyActive:nil];
+        [self setCurrentlyActive:TRUE];
     }
     return self;
 }

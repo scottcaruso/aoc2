@@ -1,14 +1,14 @@
 //
-//  WrestlerOne.m
+//  TeddyBear.m
 //  aoc2
 //
 //  Created by Scott Caruso on 1/10/13.
 //  Copyright (c) 2013 Scott Caruso. All rights reserved.
 //
 
-#import "TheCrusher.h"
+#import "TeddyBear.h"
 
-@implementation TheCrusher;
+@implementation TeddyBear;
 @synthesize contractBonus,isBonusYearly;
 
 //Base "The Crusher" init
@@ -19,7 +19,6 @@
     {
         [self setName:@"The Crusher"];
         [self setContractYears:3];
-        [self setCurrentlyActive:TRUE];
         [self setAnnualValue:275000];
         [self setContractBonus:100000];
         [self setIsBonusYearly:TRUE];

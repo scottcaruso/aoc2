@@ -1,18 +1,18 @@
 //
-//  WrestlerFactory.m
+//  ToyFactory.m
 //  aoc2
 //
 //  Created by Scott Caruso on 1/10/13.
 //  Copyright (c) 2013 Scott Caruso. All rights reserved.
 //
 
-#import "WrestlerFactory.h"
+#import "ToyFactory.h"
 
-@implementation WrestlerFactory
+@implementation ToyFactory
 
-+(Wrestlers *)createNewWrestler: (int)wrestlerID
++(Toys *)createNewToy: (int)toyID
 {
-    return [[TheCrusher alloc] init];
+    return [[TeddyBear alloc] init];
 }
 
 @end

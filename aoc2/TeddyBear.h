@@ -1,5 +1,5 @@
 //
-//  WrestlerOne.h
+//  TeddyBear.h
 //  aoc2
 //
 //  Created by Scott Caruso on 1/10/13.
@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Wrestlers.h"
+#import "Toys.h"
 
-@interface TheCrusher : Wrestlers
+@interface TeddyBear : Toys
 
 //property to determine any bonus the wrestler is paid
 @property int contractBonus;

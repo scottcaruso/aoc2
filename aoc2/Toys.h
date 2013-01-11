@@ -1,5 +1,5 @@
 //
-//  Wrestlers.h
+//  Toys.h
 //  aoc2
 //
 //  Created by Scott Caruso on 1/10/13.
@@ -8,16 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Wrestlers : NSObject
+@interface Toys : NSObject
 {
-    int wrestlerEnum;
+    int toyEnum;
 }
 
 typedef enum {
-    THECRUSHER,
-    MACHODUDE,
-    KIDKAOS
-} wrestlerEnum;
+    TEDDYBEAR,
+    BLOCKS,
+    CARS
+} toyEnum;
 
 //various data properties for the wrestlers
 @property NSString *name; //what is the wrestler's name?

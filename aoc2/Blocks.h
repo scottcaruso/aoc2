@@ -1,5 +1,5 @@
 //
-//  WrestlerTwo.h
+//  Blocks.h
 //  aoc2
 //
 //  Created by Scott Caruso on 1/10/13.
@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Wrestlers.h"
+#import "Toys.h"
 
-@interface MachoDude : Wrestlers
+@interface Blocks : Toys
 
 @end
