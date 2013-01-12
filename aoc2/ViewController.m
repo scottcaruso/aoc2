@@ -16,9 +16,9 @@
 
 - (void)viewDidLoad
 {
-<<<<<<< HEAD
+
     //This is dummy code to test Github.
-=======
+
     //Create the base teddy bear toy
     TeddyBear *teddyBear = (TeddyBear*)[ToyFactory createNewToy:TEDDYBEAR];
     
@@ -133,7 +133,6 @@
         [carsModified setTextColor:[UIColor whiteColor]];
         [self.view addSubview:carsModified];
     }
->>>>>>> week1
     [super viewDidLoad];
     
 	// Do any additional setup after loading the view, typically from a nib.
