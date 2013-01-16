@@ -11,6 +11,8 @@
 
 @interface ViewController : UIViewController
 {
+    IBOutlet UILabel *toyFactoryHeader;
+    
     UILabel *baseClasses;
     UILabel *teddyBearBase;
     UILabel *blocksBase;
