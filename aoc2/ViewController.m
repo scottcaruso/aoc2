@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad
 {
-
+    //Setting up for week 2.
     //This is dummy code to test Github.
 
     //Create the base teddy bear toy

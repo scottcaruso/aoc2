@@ -11,7 +11,6 @@
 
 @interface ViewController : UIViewController
 {
-    //Test
     UILabel *baseClasses;
     UILabel *teddyBearBase;
     UILabel *blocksBase;
