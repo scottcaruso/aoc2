@@ -56,6 +56,9 @@
 }
 
 //click events for main buttons
--(IBAction)onClick:(id)sender;
+-(IBAction)buttonClick:(id)sender;
+
+//click events for steppers
+-(IBAction)stepperClick:(id)sender;
 
 @end

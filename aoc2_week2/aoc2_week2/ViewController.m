@@ -149,143 +149,126 @@
     //toyFactoryHeader.text = @"Test text";
 }
 
--(IBAction)onClick:(id)sender
-{
-    //Initialize all of the fields in the UI.
-    //Teddy Bear buttons/fields
-    UIButton *teddyBear = (UIButton*)teddyBearButton;
-    UITextField *teddyBearText = (UITextField*)teddyBearTextField;
-    UITextView *teddyBearView = (UITextView*)teddyBearTextView;
-    UIStepper *teddyBearNumber = (UIStepper*)teddyBearNumberStepper;
-    UIStepper *teddyBearSale = (UIStepper*)teddyBearSaleStepper;
-    UILabel *teddyBearNumberLabel = (UILabel*)teddyBearNumberStepperLabel;
-    UILabel *teddyBearSaleLabel = (UILabel*)teddyBearSaleStepperLabel;
-    //Blocks buttons/fields
-    UIButton *blocks = (UIButton*)blocksButton;
-    UITextField *blocksText = (UITextField*)blocksTextField;
-    UITextView *blocksView = (UITextView*)blocksTextView;
-    UIStepper *blocksNumber = (UIStepper*)blocksNumberStepper;
-    UITextField *blocksWeight = (UITextField*)blocksWeightEntry;
-    UILabel *blocksNumberLabel = (UILabel*)blocksNumberStepperLabel;
-    UILabel *blocksWeightLabel = (UILabel*)blocksWeightEntryLabel;
-    //Cars buttons/fields
-    UIButton *cars = (UIButton*)carsButton;
-    UITextField *carsText = (UITextField*)carsTextField;
-    UITextView *carsView = (UITextView*)carsTextView;
-    UIStepper *carsNumber = (UIStepper*)carsNumberStepper;
-    UIButton *carsEdition = (UIButton*)carsEditionButton;
-    UILabel *carsNumberLabel = (UILabel*)carsNumberStepperLabel;
-    UILabel *carsEditionLabel = (UILabel*)carsEditionButtonLabel;
-    
+-(IBAction)buttonClick:(id)sender
+{    
     UIButton *button = (UIButton*)sender;
     if (button != nil)
     {
         if (button.tag == 0) //TeddyBear
         {
             //hide any fields that are currently showing and reactivate other buttons
-            if (blocks.enabled == FALSE)
+            if (blocksButton.enabled == FALSE)
             {
-                blocksText.hidden = TRUE;
-                blocksView.hidden = TRUE;
-                blocksNumber.hidden = TRUE;
-                blocksWeight.hidden = TRUE;
-                blocksNumberLabel.hidden = TRUE;
-                blocksWeightLabel.hidden = TRUE;
-                blocks.enabled = TRUE;
-            } else if (cars.enabled == FALSE)
+                blocksTextField.hidden = TRUE;
+                blocksTextView.hidden = TRUE;
+                blocksNumberStepper.hidden = TRUE;
+                blocksWeightEntry.hidden = TRUE;
+                blocksNumberStepperLabel.hidden = TRUE;
+                blocksWeightEntryLabel.hidden = TRUE;
+                blocksButton.enabled = TRUE;
+            } else if (carsButton.enabled == FALSE)
             {
-                carsText.hidden = TRUE;
-                carsView.hidden = TRUE;
-                carsNumber.hidden = TRUE;
-                carsEdition.hidden = TRUE;
-                carsNumberLabel.hidden = TRUE;
-                carsEditionLabel.hidden = TRUE;
-                cars.enabled = TRUE;
+                carsTextField.hidden = TRUE;
+                carsTextView.hidden = TRUE;
+                carsNumberStepper.hidden = TRUE;
+                carsEditionButton.hidden = TRUE;
+                carsNumberStepperLabel.hidden = TRUE;
+                carsEditionButtonLabel.hidden = TRUE;
+                carsButton.enabled = TRUE;
             } else
             {
                 //Nothing happens
             }
             //unhide the hidden Teddy Bear fields
-            teddyBearText.hidden = FALSE;
-            teddyBearView.hidden = FALSE;
-            teddyBearNumber.hidden = FALSE;
-            teddyBearSale.hidden = FALSE;
-            teddyBearNumberLabel.hidden = FALSE;
-            teddyBearSaleLabel.hidden = FALSE;
+            teddyBearTextField.hidden = FALSE;
+            teddyBearTextView.hidden = FALSE;
+            teddyBearNumberStepper.hidden = FALSE;
+            teddyBearSaleStepper.hidden = FALSE;
+            teddyBearNumberStepperLabel.hidden = FALSE;
+            teddyBearSaleStepperLabel.hidden = FALSE;
             //disable the Teddy Bear button
-            teddyBear.enabled = FALSE;
+            teddyBearButton.enabled = FALSE;
         }
         else if (button.tag == 1) //Blocks
         {
-            if (teddyBear.enabled == FALSE)
+            if (teddyBearButton.enabled == FALSE)
             {
                 teddyBearTextField.hidden = TRUE;
-                teddyBearView.hidden = TRUE;
-                teddyBearNumber.hidden = TRUE;
-                teddyBearSale.hidden = TRUE;
-                teddyBearNumberLabel.hidden = TRUE;
-                teddyBearSaleLabel.hidden = TRUE;
-                teddyBear.enabled = TRUE;
-            } else if (cars.enabled == FALSE)
+                teddyBearTextView.hidden = TRUE;
+                teddyBearNumberStepper.hidden = TRUE;
+                teddyBearSaleStepper.hidden = TRUE;
+                teddyBearNumberStepperLabel.hidden = TRUE;
+                teddyBearSaleStepperLabel.hidden = TRUE;
+                teddyBearButton.enabled = TRUE;
+            } else if (carsButton.enabled == FALSE)
             {
-                carsText.hidden = TRUE;
-                carsView.hidden = TRUE;
-                carsNumber.hidden = TRUE;
-                carsEdition.hidden = TRUE;
-                carsNumberLabel.hidden = TRUE;
-                carsEditionLabel.hidden = TRUE;
-                cars.enabled = TRUE;
+                carsTextField.hidden = TRUE;
+                carsTextView.hidden = TRUE;
+                carsNumberStepper.hidden = TRUE;
+                carsEditionButton.hidden = TRUE;
+                carsNumberStepperLabel.hidden = TRUE;
+                carsEditionButtonLabel.hidden = TRUE;
+                carsButton.enabled = TRUE;
             } else
             {
                 //Nothing happens
             }
             //unhide the Blocks fields
-            blocksText.hidden = FALSE;
-            blocksView.hidden = FALSE;
-            blocksNumber.hidden = FALSE;
-            blocksWeight.hidden = FALSE;
-            blocksNumberLabel.hidden = FALSE;
-            blocksWeightLabel.hidden = FALSE;
-            blocks.enabled = FALSE;
-
+            blocksTextField.hidden = FALSE;
+            blocksTextView.hidden = FALSE;
+            blocksNumberStepper.hidden = FALSE;
+            blocksWeightEntry.hidden = FALSE;
+            blocksNumberStepperLabel.hidden = FALSE;
+            blocksWeightEntryLabel.hidden = FALSE;
+            blocksButton.enabled = FALSE;
         }
         else if (button.tag == 2) //Cars
         {
-            if (teddyBear.enabled == FALSE)
+            if (teddyBearButton.enabled == FALSE)
             {
-                teddyBearTextField.hidden = TRUE;
-                teddyBearView.hidden = TRUE;
-                teddyBearNumber.hidden = TRUE;
-                teddyBearSale.hidden = TRUE;
-                teddyBearNumberLabel.hidden = TRUE;
-                teddyBearSaleLabel.hidden = TRUE;
-                teddyBear.enabled = TRUE;
-            } else if (blocks.enabled == FALSE)
+                teddyBearTextField.hidden = FALSE;
+                teddyBearTextView.hidden = FALSE;
+                teddyBearNumberStepper.hidden = FALSE;
+                teddyBearSaleStepper.hidden = FALSE;
+                teddyBearNumberStepperLabel.hidden = FALSE;
+                teddyBearSaleStepperLabel.hidden = FALSE;
+                teddyBearButton.enabled = TRUE;
+            } else if (blocksButton.enabled == FALSE)
             {
-                blocksText.hidden = TRUE;
-                blocksView.hidden = TRUE;
-                blocksNumber.hidden = TRUE;
-                blocksWeight.hidden = TRUE;
-                blocksNumberLabel.hidden = TRUE;
-                blocksWeightLabel.hidden = TRUE;
-                blocks.enabled = TRUE;
+                blocksTextField.hidden = TRUE;
+                blocksTextView.hidden = TRUE;
+                blocksNumberStepper.hidden = TRUE;
+                blocksWeightEntry.hidden = TRUE;
+                blocksNumberStepperLabel.hidden = TRUE;
+                blocksWeightEntryLabel.hidden = TRUE;
+                blocksButton.enabled = TRUE;
             } else
             {
                 //Nothing happens
             }
             //unhide the Cars fields
-            carsText.hidden = FALSE;
-            carsView.hidden = FALSE;
-            carsNumber.hidden = FALSE;
-            carsEdition.hidden = FALSE;
-            carsNumberLabel.hidden = FALSE;
-            carsEditionLabel.hidden = FALSE;
-            cars.enabled = FALSE;
+            carsTextField.hidden = FALSE;
+            carsTextView.hidden = FALSE;
+            carsNumberStepper.hidden = FALSE;
+            carsEditionButton.hidden = FALSE;
+            carsNumberStepperLabel.hidden = FALSE;
+            carsEditionButtonLabel.hidden = FALSE;
+            carsButton.enabled = FALSE;
         }
         else
         {
             //Nothing happens!
         }
+    }
+}
+
+//click events for steppers
+-(IBAction)stepperClick:(id)sender
+{
+    UIStepper *stepper = (UIStepper*)sender;
+    if (stepper != nil)
+    {
+        int currentStepper = stepper.value;
     }
 }
 
