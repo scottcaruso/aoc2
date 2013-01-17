@@ -182,6 +182,7 @@
             }
             //unhide the hidden Teddy Bear fields
             teddyBearTextField.hidden = FALSE;
+            teddyBearSalePriceTextField.hidden = FALSE;
             teddyBearTextView.hidden = FALSE;
             teddyBearNumberStepper.hidden = FALSE;
             teddyBearSaleStepper.hidden = FALSE;
@@ -195,6 +196,7 @@
             if (teddyBearButton.enabled == FALSE)
             {
                 teddyBearTextField.hidden = TRUE;
+                teddyBearSalePriceTextField.hidden = TRUE;
                 teddyBearTextView.hidden = TRUE;
                 teddyBearNumberStepper.hidden = TRUE;
                 teddyBearSaleStepper.hidden = TRUE;
@@ -228,6 +230,7 @@
             if (teddyBearButton.enabled == FALSE)
             {
                 teddyBearTextField.hidden = FALSE;
+                teddyBearSalePriceTextField.hidden = FALSE;
                 teddyBearTextView.hidden = FALSE;
                 teddyBearNumberStepper.hidden = FALSE;
                 teddyBearSaleStepper.hidden = FALSE;

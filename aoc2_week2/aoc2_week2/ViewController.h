@@ -20,6 +20,7 @@
     IBOutlet UIButton *carsButton;
     //text fields
     IBOutlet UITextField *teddyBearTextField;
+    IBOutlet UITextField *teddyBearSalePriceTextField;
     IBOutlet UITextField *blocksTextField;
     IBOutlet UITextField *carsTextField;
     //textareas
@@ -46,6 +47,7 @@
     
     int teddyBearsForSale;
     int teddyBearSalePrice;
+    int steps;
 
     //UILabels for app Part 1
     UILabel *baseClasses;
