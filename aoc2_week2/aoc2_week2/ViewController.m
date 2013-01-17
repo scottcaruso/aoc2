@@ -269,6 +269,20 @@
     if (stepper != nil)
     {
         int currentStepper = stepper.value;
+        NSLog(@"%i",currentStepper);
+        if (stepper.tag == 0)
+        {
+            NSLog(@"The Teddy Bear primary stepper just went up to %i",currentStepper);
+        } else if (stepper.tag == 1)
+        {
+            NSLog(@"The Teddy Bear secondary stepper just went up to %i",currentStepper);
+        } else if (stepper.tag == 2)
+        {
+            NSLog(@"The Blocks stepper just went up to %i",currentStepper);
+        } else if (stepper.tag == 3)
+        {
+            NSLog(@"The Cars stepper just went up to %i",currentStepper);
+        }
     }
 }
 
