@@ -263,6 +263,11 @@
     }
 }
 
+-(int)stepperValue: (int)currentStepper
+{
+    return currentStepper;
+}
+
 //click events for steppers
 -(IBAction)stepperClick:(id)sender
 {
@@ -273,6 +278,7 @@
         if (stepper.tag == 0)
         {
            teddyBearTextField.text = [NSString stringWithFormat:@"%i teddy bears",currentStepper];
+            [self stepperValue:currentStepper];
         } else if (stepper.tag == 1)
         {
             teddyBearTextField.text = [NSString stringWithFormat:@"%i sale price",currentStepper];

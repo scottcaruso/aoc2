@@ -64,5 +64,8 @@
 //click events for steppers
 -(IBAction)stepperClick:(id)sender;
 
+//return stepper value
+-(int)stepperValue:(int)currentStepper;
+
 
 @end
