@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad
 {
+    
     /*
     //Setting up for week 2.
     //This is dummy code to test Github.
@@ -269,19 +270,18 @@
     if (stepper != nil)
     {
         int currentStepper = stepper.value;
-        NSLog(@"%i",currentStepper);
         if (stepper.tag == 0)
         {
-            NSLog(@"The Teddy Bear primary stepper just went up to %i",currentStepper);
+           teddyBearTextField.text = [NSString stringWithFormat:@"%i teddy bears",currentStepper];
         } else if (stepper.tag == 1)
         {
-            NSLog(@"The Teddy Bear secondary stepper just went up to %i",currentStepper);
+            teddyBearTextField.text = [NSString stringWithFormat:@"%i sale price",currentStepper];
         } else if (stepper.tag == 2)
         {
-            NSLog(@"The Blocks stepper just went up to %i",currentStepper);
+            blocksTextField.text = [NSString stringWithFormat:@"%i blocks",currentStepper];
         } else if (stepper.tag == 3)
         {
-            NSLog(@"The Cars stepper just went up to %i",currentStepper);
+            carsTextField.text = [NSString stringWithFormat:@"%i toy cars",currentStepper];
         }
     }
 }

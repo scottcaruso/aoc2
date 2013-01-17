@@ -43,6 +43,9 @@
     IBOutlet UIButton *carsEditionButton;
     IBOutlet UILabel *carsNumberStepperLabel;
     IBOutlet UILabel *carsEditionButtonLabel;
+    
+    int teddyBearsForSale;
+    int teddyBearSalePrice;
 
     //UILabels for app Part 1
     UILabel *baseClasses;
@@ -60,5 +63,6 @@
 
 //click events for steppers
 -(IBAction)stepperClick:(id)sender;
+
 
 @end
