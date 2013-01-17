@@ -148,4 +148,26 @@
     //toyFactoryHeader.text = @"Test text";
 }
 
+-(IBAction)onClick:(id)sender
+{
+    UIButton *button = (UIButton*)sender;
+    if (button != nil)
+    {
+        if (button.tag == 0)
+        {
+            NSLog(@"This was a test.");
+        }
+        else if (button.tag == 1)
+        {
+            NSLog(@"This was a test of the second button.");
+        }
+        else if (button.tag == 2)
+            NSLog(@"This was a test of the third button.");
+        else
+        {
+            //Nothing happens!
+        }
+    }
+}
+
 @end

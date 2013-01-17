@@ -43,10 +43,8 @@
     IBOutlet UIButton *carsEditionButton;
     IBOutlet UILabel *carsNumberStepperLabel;
     IBOutlet UILabel *carsEditionButtonLabel;
-    //Need to add second cars element and label
-    
-    
-    
+
+    //UILabels for app Part 1
     UILabel *baseClasses;
     UILabel *teddyBearBase;
     UILabel *blocksBase;
@@ -56,4 +54,8 @@
     UILabel *blocksModified;
     UILabel *carsModified;
 }
+
+//click events for main buttons
+-(IBAction)onClick:(id)sender;
+
 @end
