@@ -55,15 +55,6 @@
     //Info button
     IBOutlet UIButton *infoImage;
 
-    //UILabels for app Part 1
-    UILabel *baseClasses;
-    UILabel *teddyBearBase;
-    UILabel *blocksBase;
-    UILabel *carsBase;
-    UILabel *modifiedClasses;
-    UILabel *teddyBearModified;
-    UILabel *blocksModified;
-    UILabel *carsModified;
 }
 
 //click events for main buttons

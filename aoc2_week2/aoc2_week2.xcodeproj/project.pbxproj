@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3013601B16A8DEAB00FA4C47 /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = 3013601A16A8DEAB00FA4C47 /* info.png */; };
+		3013601D16A8E11900FA4C47 /* infoPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3013601C16A8E11900FA4C47 /* infoPage.xib */; };
+		3013602516A8E36400FA4C47 /* infoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3013602416A8E36400FA4C47 /* infoViewController.m */; };
 		30B2CF6516A6A93400BCA9DB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B2CF6416A6A93400BCA9DB /* UIKit.framework */; };
 		30B2CF6716A6A93400BCA9DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B2CF6616A6A93400BCA9DB /* Foundation.framework */; };
 		30B2CF6916A6A93400BCA9DB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B2CF6816A6A93400BCA9DB /* CoreGraphics.framework */; };
@@ -43,6 +45,9 @@
 
 /* Begin PBXFileReference section */
 		3013601A16A8DEAB00FA4C47 /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
+		3013601C16A8E11900FA4C47 /* infoPage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = infoPage.xib; path = ../infoPage.xib; sourceTree = "<group>"; };
+		3013602316A8E36400FA4C47 /* infoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = infoViewController.h; sourceTree = "<group>"; };
+		3013602416A8E36400FA4C47 /* infoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = infoViewController.m; sourceTree = "<group>"; };
 		30B2CF6016A6A93400BCA9DB /* aoc2_week2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aoc2_week2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30B2CF6416A6A93400BCA9DB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		30B2CF6616A6A93400BCA9DB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -150,6 +155,9 @@
 				30B2CF7C16A6A93400BCA9DB /* ViewController.h */,
 				30B2CF7D16A6A93400BCA9DB /* ViewController.m */,
 				30B2CF7F16A6A93400BCA9DB /* ViewController.xib */,
+				3013601C16A8E11900FA4C47 /* infoPage.xib */,
+				3013602316A8E36400FA4C47 /* infoViewController.h */,
+				3013602416A8E36400FA4C47 /* infoViewController.m */,
 				30B2CF6B16A6A93400BCA9DB /* Supporting Files */,
 			);
 			path = aoc2_week2;
@@ -265,6 +273,7 @@
 				30B2CF7B16A6A93400BCA9DB /* Default-568h@2x.png in Resources */,
 				30B2CF8116A6A93400BCA9DB /* ViewController.xib in Resources */,
 				3013601B16A8DEAB00FA4C47 /* info.png in Resources */,
+				3013601D16A8E11900FA4C47 /* infoPage.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +316,7 @@
 				30C3793916A6AA9600BC2486 /* TeddyBear.m in Sources */,
 				30C3793A16A6AA9600BC2486 /* ToyFactory.m in Sources */,
 				30C3793B16A6AA9600BC2486 /* Toys.m in Sources */,
+				3013602516A8E36400FA4C47 /* infoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
