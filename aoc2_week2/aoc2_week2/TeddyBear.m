@@ -25,25 +25,19 @@
 }
 
 //Overriding the original Purchase Toy method since this toy is on sale
--(NSString *)costToPurchaseToy
+-(NSString *)costToPurchaseToy: (float)salePercentage :(float)numberOfToys
 {
-    float salePercentage;
-    if (self.isOnSale == TRUE)
-    {
-        salePercentage = .80;
-    }
-    else
-    {
-        salePercentage = 1.00;
-    }
     float totalCost;
-    totalCost = (self.retailPrice * salePercentage) + self.priceToShip;
+    float percentOff;
+    percentOff = salePercentage/100.;
+    totalCost = numberOfToys*(self.retailPrice * (1.-percentOff) + self.priceToShip);
     float salePrice;
-    salePrice = (self.retailPrice * salePercentage);
+    salePrice = self.retailPrice * (1.-percentOff);
+    NSString *formattedNumberOfToys = [NSString stringWithFormat:@"%.f",numberOfToys];
     NSString *formattedPrice = [NSString stringWithFormat:@"%.02f",salePrice];
     NSString *formattedShipping = [NSString stringWithFormat:@"%.02f",self.priceToShip];
     NSString *formattedCost = [NSString stringWithFormat:@"%.02f",totalCost];
-    NSString *result = [NSString stringWithFormat:@"This %@ toy is on sale for $%@, with a shipping cost of $%@. The total customer cost is $%@.",self.name,formattedPrice,formattedShipping,formattedCost];
+    NSString *result = [NSString stringWithFormat:@"%@ %@ toys on sale for $%@, with a shipping cost of $%@. The total customer cost is $%@.",formattedNumberOfToys,self.name,formattedPrice,formattedShipping,formattedCost];
     return result;
 }
 

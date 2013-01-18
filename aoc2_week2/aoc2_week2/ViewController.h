@@ -36,18 +36,21 @@
     //blocks
     IBOutlet UIStepper *blocksNumberStepper;
     //weight accepts numbers only
-    IBOutlet UITextField *blocksWeightEntry;
+    IBOutlet UISlider *blocksWeightEntry;
+    IBOutlet UITextField *blocksWeightValue;
     IBOutlet UILabel *blocksNumberStepperLabel;
     IBOutlet UILabel *blocksWeightEntryLabel;
     //cars
     IBOutlet UIStepper *carsNumberStepper;
     IBOutlet UIButton *carsEditionButton;
+    IBOutlet UITextField *carsEditionDisplay;
     IBOutlet UILabel *carsNumberStepperLabel;
     IBOutlet UILabel *carsEditionButtonLabel;
     
-    int teddyBearsForSale;
-    int teddyBearSalePrice;
-    int steps;
+    //Calculate buttons
+    IBOutlet UIButton *teddyBearCalculate;
+    IBOutlet UIButton *blocksCalculate;
+    IBOutlet UIButton *carsCalculate;
 
     //UILabels for app Part 1
     UILabel *baseClasses;
@@ -66,8 +69,13 @@
 //click events for steppers
 -(IBAction)stepperClick:(id)sender;
 
-//return stepper value
--(int)stepperValue:(int)currentStepper;
+//actions for the weight sliders
+-(IBAction)weightSlider:(id)sender;
 
+//actions for the edition button
+-(IBAction)onEditionClick:(id)sender;
+
+//actions for the calculate buttons
+-(IBAction)onCalculateClick:(id)sender;
 
 @end

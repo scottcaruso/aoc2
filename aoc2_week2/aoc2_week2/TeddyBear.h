@@ -15,6 +15,6 @@
 @property BOOL isOnSale;
 
 //override the cost if on sale
--(NSString *)costToPurchaseToy;
+-(NSString *)costToPurchaseToy:(float)salePercentage :(float)numberOfToys;
 
 @end

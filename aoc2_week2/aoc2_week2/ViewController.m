@@ -164,8 +164,10 @@
                 blocksTextView.hidden = TRUE;
                 blocksNumberStepper.hidden = TRUE;
                 blocksWeightEntry.hidden = TRUE;
+                blocksWeightValue.hidden = TRUE;
                 blocksNumberStepperLabel.hidden = TRUE;
                 blocksWeightEntryLabel.hidden = TRUE;
+                blocksCalculate.hidden = TRUE;
                 blocksButton.enabled = TRUE;
             } else if (carsButton.enabled == FALSE)
             {
@@ -175,6 +177,8 @@
                 carsEditionButton.hidden = TRUE;
                 carsNumberStepperLabel.hidden = TRUE;
                 carsEditionButtonLabel.hidden = TRUE;
+                carsEditionDisplay.hidden = TRUE;
+                carsCalculate.hidden = TRUE;
                 carsButton.enabled = TRUE;
             } else
             {
@@ -188,6 +192,7 @@
             teddyBearSaleStepper.hidden = FALSE;
             teddyBearNumberStepperLabel.hidden = FALSE;
             teddyBearSaleStepperLabel.hidden = FALSE;
+            teddyBearCalculate.hidden = FALSE;
             //disable the Teddy Bear button
             teddyBearButton.enabled = FALSE;
         }
@@ -202,6 +207,7 @@
                 teddyBearSaleStepper.hidden = TRUE;
                 teddyBearNumberStepperLabel.hidden = TRUE;
                 teddyBearSaleStepperLabel.hidden = TRUE;
+                teddyBearCalculate.hidden = TRUE;
                 teddyBearButton.enabled = TRUE;
             } else if (carsButton.enabled == FALSE)
             {
@@ -211,6 +217,8 @@
                 carsEditionButton.hidden = TRUE;
                 carsNumberStepperLabel.hidden = TRUE;
                 carsEditionButtonLabel.hidden = TRUE;
+                carsEditionDisplay.hidden = TRUE;
+                carsCalculate.hidden = TRUE;
                 carsButton.enabled = TRUE;
             } else
             {
@@ -221,8 +229,10 @@
             blocksTextView.hidden = FALSE;
             blocksNumberStepper.hidden = FALSE;
             blocksWeightEntry.hidden = FALSE;
+            blocksWeightValue.hidden = FALSE;
             blocksNumberStepperLabel.hidden = FALSE;
             blocksWeightEntryLabel.hidden = FALSE;
+            blocksCalculate.hidden = FALSE;
             blocksButton.enabled = FALSE;
         }
         else if (button.tag == 2) //Cars
@@ -236,6 +246,7 @@
                 teddyBearSaleStepper.hidden = FALSE;
                 teddyBearNumberStepperLabel.hidden = FALSE;
                 teddyBearSaleStepperLabel.hidden = FALSE;
+                teddyBearCalculate.hidden = FALSE;
                 teddyBearButton.enabled = TRUE;
             } else if (blocksButton.enabled == FALSE)
             {
@@ -243,8 +254,10 @@
                 blocksTextView.hidden = TRUE;
                 blocksNumberStepper.hidden = TRUE;
                 blocksWeightEntry.hidden = TRUE;
+                blocksWeightValue.hidden = TRUE;
                 blocksNumberStepperLabel.hidden = TRUE;
                 blocksWeightEntryLabel.hidden = TRUE;
+                blocksCalculate.hidden = TRUE;
                 blocksButton.enabled = TRUE;
             } else
             {
@@ -255,8 +268,11 @@
             carsTextView.hidden = FALSE;
             carsNumberStepper.hidden = FALSE;
             carsEditionButton.hidden = FALSE;
+            carsEditionDisplay.hidden = FALSE;
+            carsEditionDisplay.text = @"Standard";
             carsNumberStepperLabel.hidden = FALSE;
             carsEditionButtonLabel.hidden = FALSE;
+            carsCalculate.hidden = FALSE;
             carsButton.enabled = FALSE;
         }
         else
@@ -266,11 +282,6 @@
     }
 }
 
--(int)stepperValue: (int)currentStepper
-{
-    return currentStepper;
-}
-
 //click events for steppers
 -(IBAction)stepperClick:(id)sender
 {
@@ -278,20 +289,62 @@
     if (stepper != nil)
     {
         int currentStepper = stepper.value;
+        //stepper tag 0 = teddy bear number; tag 1 = teddy bear sale; tag 2 = blocks number; tag 3 = cars number
         if (stepper.tag == 0)
         {
-           teddyBearTextField.text = [NSString stringWithFormat:@"%i teddy bears",currentStepper];
-            [self stepperValue:currentStepper];
+           teddyBearTextField.text = [NSString stringWithFormat:@"%i",currentStepper];
         } else if (stepper.tag == 1)
         {
-            teddyBearTextField.text = [NSString stringWithFormat:@"%i sale price",currentStepper];
+            teddyBearSalePriceTextField.text = [NSString stringWithFormat:@"%i%% off",currentStepper];
         } else if (stepper.tag == 2)
         {
-            blocksTextField.text = [NSString stringWithFormat:@"%i blocks",currentStepper];
+            blocksTextField.text = [NSString stringWithFormat:@"%i",currentStepper];
         } else if (stepper.tag == 3)
         {
-            carsTextField.text = [NSString stringWithFormat:@"%i toy cars",currentStepper];
+            carsTextField.text = [NSString stringWithFormat:@"%i",currentStepper];
         }
+    }
+}
+
+-(IBAction)weightSlider:(id)sender
+{
+    UISlider *weightEntry = (UISlider*)sender;
+    if (weightEntry != nil)
+    {
+        int currentValue = weightEntry.value;
+        blocksWeightValue.text = [NSString stringWithFormat:@"%ilbs",currentValue];
+    }
+}
+
+-(IBAction)onEditionClick:(id)sender
+{
+    UIButton *editionButton = (UIButton*)sender;
+    if (editionButton !=nil)
+    {
+        NSString *editionText = [carsEditionDisplay text];
+        if (editionText == @"Standard")
+        {
+            carsEditionDisplay.text = @"Limited";
+        } else if (editionText == @"Limited")
+        {
+            carsEditionDisplay.text = @"Special";
+        } else if (editionText == @"Special")
+        {
+            carsEditionDisplay.text = @"Standard";
+        }
+    }
+}
+
+-(IBAction)onCalculateClick:(id)sender
+{
+    UIButton *calculateButton = (UIButton*)sender;
+    //Calculate buttons are tagged 0 - Teddy Bear, 1 - Blocks, 2 - Cars
+    if (calculateButton.tag == 0)
+    {
+        TeddyBear *onSaleTeddyBear = (TeddyBear*)[ToyFactory createNewToy:TEDDYBEAR];
+        [onSaleTeddyBear setRetailPrice:15.99];
+        NSString* onSaleTeddyBearText = [onSaleTeddyBear costToPurchaseToy:teddyBearSaleStepper.value:teddyBearNumberStepper.value];
+        teddyBearTextView.text = onSaleTeddyBearText;
     }
 }
 
