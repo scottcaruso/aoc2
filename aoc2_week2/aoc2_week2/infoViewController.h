@@ -10,4 +10,6 @@
 
 @interface infoViewController : UIViewController
 
+-(IBAction)returnToMain:(id)sender;
+
 @end

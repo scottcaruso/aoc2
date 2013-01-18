@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "infoViewController.h"
 
 @interface ViewController ()
 
@@ -374,7 +375,8 @@
 
 -(IBAction)onInfoButtonClick:(id)sender
 {
-    
+    infoViewController *infoView = [[infoViewController alloc] initWithNibName:@"infoPage" bundle:nil];
+    [self presentViewController:infoView animated:TRUE completion:nil];
 }
 
 @end
