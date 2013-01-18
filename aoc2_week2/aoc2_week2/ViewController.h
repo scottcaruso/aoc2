@@ -52,6 +52,9 @@
     IBOutlet UIButton *blocksCalculate;
     IBOutlet UIButton *carsCalculate;
     
+    //Background color control
+    IBOutlet UISegmentedControl *mainSegmentControl;
+    
     //Info button
     IBOutlet UIButton *infoImage;
 
@@ -74,5 +77,8 @@
 
 //clicking Info button
 -(IBAction)onInfoButtonClick:(id)sender;
+
+//change background color
+-(IBAction)onBackgroundColorChange:(id)sender;
 
 @end

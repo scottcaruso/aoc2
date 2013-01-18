@@ -379,4 +379,23 @@
     [self presentViewController:infoView animated:TRUE completion:nil];
 }
 
+-(IBAction)onBackgroundColorChange:(id)sender
+{
+    UISegmentedControl *backgroundControl = (UISegmentedControl*)sender;
+    if (backgroundControl != nil)
+    {
+        int backgroundIndex = backgroundControl.selectedSegmentIndex;
+        if (backgroundIndex == 0)
+        {
+            self.view.backgroundColor = [UIColor lightGrayColor];
+        } else if (backgroundIndex == 1)
+        {
+            self.view.backgroundColor = [UIColor orangeColor];
+        } else if (backgroundIndex == 2)
+        {
+            self.view.backgroundColor = [UIColor purpleColor];
+        }
+    }
+}
+
 @end
