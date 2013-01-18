@@ -358,6 +358,17 @@
         int numberOfToys = (int)floorf(blocksNumberStepper.value);
         NSString* oversizedBlockToyText = [oversizedBlockToy costToPurchaseToy:numberOfToys];
         blocksTextView.text = oversizedBlockToyText;
+    } else if (calculateButton.tag == 2)
+    {
+        Cars *specialEditionCarToy = (Cars*)[ToyFactory createNewToy:CARS];
+        //set a base retail price for the Car
+        [specialEditionCarToy setRetailPrice:92.95];
+        //set the edition for the Car
+        [specialEditionCarToy setWhichEditionIsThis:carsEditionDisplay.text];
+        [specialEditionCarToy setName:@"Ford Thunderbird toy"];
+        int numberOfToys = (int)floorf(carsNumberStepper.value);
+        NSString* specialEditionCarToyText = [specialEditionCarToy costToPurchaseToy:numberOfToys];
+        carsTextView.text = specialEditionCarToyText;
     }
 }
 
