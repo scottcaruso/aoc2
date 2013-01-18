@@ -51,6 +51,9 @@
     IBOutlet UIButton *teddyBearCalculate;
     IBOutlet UIButton *blocksCalculate;
     IBOutlet UIButton *carsCalculate;
+    
+    //Info button
+    IBOutlet UIButton *infoImage;
 
     //UILabels for app Part 1
     UILabel *baseClasses;
@@ -77,5 +80,8 @@
 
 //actions for the calculate buttons
 -(IBAction)onCalculateClick:(id)sender;
+
+//clicking Info button
+-(IBAction)onInfoButtonClick:(id)sender;
 
 @end

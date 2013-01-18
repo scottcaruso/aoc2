@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3013601B16A8DEAB00FA4C47 /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = 3013601A16A8DEAB00FA4C47 /* info.png */; };
 		30B2CF6516A6A93400BCA9DB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B2CF6416A6A93400BCA9DB /* UIKit.framework */; };
 		30B2CF6716A6A93400BCA9DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B2CF6616A6A93400BCA9DB /* Foundation.framework */; };
 		30B2CF6916A6A93400BCA9DB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B2CF6816A6A93400BCA9DB /* CoreGraphics.framework */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3013601A16A8DEAB00FA4C47 /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
 		30B2CF6016A6A93400BCA9DB /* aoc2_week2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aoc2_week2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30B2CF6416A6A93400BCA9DB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		30B2CF6616A6A93400BCA9DB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -132,6 +134,7 @@
 		30B2CF6A16A6A93400BCA9DB /* aoc2_week2 */ = {
 			isa = PBXGroup;
 			children = (
+				3013601A16A8DEAB00FA4C47 /* info.png */,
 				30C3792D16A6AA9600BC2486 /* Blocks.h */,
 				30C3792E16A6AA9600BC2486 /* Blocks.m */,
 				30C3792F16A6AA9600BC2486 /* Cars.h */,
@@ -261,6 +264,7 @@
 				30B2CF7916A6A93400BCA9DB /* Default@2x.png in Resources */,
 				30B2CF7B16A6A93400BCA9DB /* Default-568h@2x.png in Resources */,
 				30B2CF8116A6A93400BCA9DB /* ViewController.xib in Resources */,
+				3013601B16A8DEAB00FA4C47 /* info.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

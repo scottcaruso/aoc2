@@ -372,4 +372,9 @@
     }
 }
 
+-(IBAction)onInfoButtonClick:(id)sender
+{
+    //Something
+}
+
 @end
