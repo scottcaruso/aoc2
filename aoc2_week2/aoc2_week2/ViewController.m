@@ -342,9 +342,22 @@
     if (calculateButton.tag == 0)
     {
         TeddyBear *onSaleTeddyBear = (TeddyBear*)[ToyFactory createNewToy:TEDDYBEAR];
+        //set a base price for the Bear
         [onSaleTeddyBear setRetailPrice:15.99];
         NSString* onSaleTeddyBearText = [onSaleTeddyBear costToPurchaseToy:teddyBearSaleStepper.value:teddyBearNumberStepper.value];
         teddyBearTextView.text = onSaleTeddyBearText;
+    } else if (calculateButton.tag == 1)
+    {
+        Blocks *oversizedBlockToy = (Blocks*)[ToyFactory createNewToy:BLOCKS];
+        //set a base retail price for the Blocks
+        [oversizedBlockToy setRetailPrice:49.95];
+        //set the overweight/size parameters for the Blocks
+        [oversizedBlockToy setIsOverweight:TRUE];
+        int weightInt = (int)floorf(blocksWeightEntry.value);
+        [oversizedBlockToy setWeightOfToy:weightInt];
+        int numberOfToys = (int)floorf(blocksNumberStepper.value);
+        NSString* oversizedBlockToyText = [oversizedBlockToy costToPurchaseToy:numberOfToys];
+        blocksTextView.text = oversizedBlockToyText;
     }
 }
 

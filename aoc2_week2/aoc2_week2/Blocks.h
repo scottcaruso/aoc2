@@ -13,11 +13,9 @@
 
 //property to determine additional shipping charges
 @property BOOL isOverweight;
-@property int weightOfToy;
+@property float weightOfToy;
 
 //override the cost if on sale
--(NSString *)costToPurchaseToy;
-
-//Test edit
+-(NSString *)costToPurchaseToy: (int)numberOfToys;
 
 @end
