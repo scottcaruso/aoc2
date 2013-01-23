@@ -46,6 +46,29 @@
     }
 }
 
+//Show the Date Spinner and set the minimum date to the current date/time
+-(IBAction)showDateSpinner:(id)sender
+{
+    datePicker.hidden = FALSE;
+    NSString* date = [NSString stringWithFormat:@"%@",[datePicker date]];
+    NSString* modifiedDateString = [date substringToIndex:10];
+    [dateButton setTitle:modifiedDateString forState:0];
+    [dateButton setTitle:modifiedDateString forState:1];
+    [dateButton setTitle:modifiedDateString forState:2];
+    NSDate* thisDate = [datePicker date];
+    datePicker.minimumDate = thisDate;
+}
+
+//When the spinner value changes, change the value of the button
+-(IBAction)changeButtonText:(id)sender
+{
+    NSString* date = [NSString stringWithFormat:@"%@",[datePicker date]];
+    NSString* modifiedDateString = [date substringToIndex:10];
+    [dateButton setTitle:modifiedDateString forState:0];
+    [dateButton setTitle:modifiedDateString forState:1];
+    [dateButton setTitle:modifiedDateString forState:2];
+}
+
 -(BOOL)textFieldShouldBeginEditing:(UITextField *)eventEntry
 {
     eventEntry.text = @"";

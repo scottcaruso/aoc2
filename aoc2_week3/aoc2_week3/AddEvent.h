@@ -18,9 +18,13 @@
 {
     id<thisEvent> delegate;
     IBOutlet UITextField *eventDescription;
+    IBOutlet UIButton *dateButton;
+    IBOutlet UIDatePicker *datePicker;
 }
 
 -(IBAction)saveAndClose:(id)sender;
+-(IBAction)showDateSpinner:(id)sender;
+-(IBAction)changeButtonText:(id)sender;
 
 @property (strong)id<thisEvent> delegate;
 
