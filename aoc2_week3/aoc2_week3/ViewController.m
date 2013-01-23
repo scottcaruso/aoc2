@@ -41,7 +41,23 @@
 {
     NSString* newEvent = textEntered;
     NSDate* newDate = dateEntered;
-    mainView.text = [NSString stringWithFormat:@"%@,%@",textEntered,dateEntered];
+    mainView.text = [NSString stringWithFormat:@"%@,%@",newEvent,newDate];
+    NSString* formattedDate = [self convertTimeToLocalRegion:newDate];
+    NSLog(@"%@",formattedDate);
+}
+
+-(NSString *)appendNewEvent:(NSString *)description date:(NSString *)dateString
+{
+  //something will happen
+    return nil;
+}
+
+-(NSString *)convertTimeToLocalRegion:(NSDate *)dateEntered
+{
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat: @"EEEE, MM-dd-YYYY HH:mm zzz"];
+    NSString *stringFromDate = [formatter stringFromDate:dateEntered];
+    return stringFromDate;
 }
 
 @end
