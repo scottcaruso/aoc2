@@ -31,9 +31,16 @@
     AddEvent *addEvent = [[AddEvent alloc] initWithNibName:@"AddEvent" bundle:nil];
     if (addEvent != nil);
     {
+        addEvent.delegate = self;
         [self presentViewController:addEvent animated:TRUE completion:nil];
     }
     
+}
+
+-(void)grabEventText:(NSString *)textEntered
+{
+    NSString* newEvent = textEntered;
+    NSLog(@"%@",newEvent);
 }
 
 @end

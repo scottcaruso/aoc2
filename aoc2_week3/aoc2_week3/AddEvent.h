@@ -10,14 +10,14 @@
 
 @protocol thisEvent <NSObject>
 
--(void)grabEventText:(NSString *)eventDescription;
+-(void)grabEventText:(NSString*)textEntered;
 
 @end
 
 @interface AddEvent : UIViewController <UITextFieldDelegate>
 {
-    id <thisEvent> delegate;
-    IBOutlet UITextView *eventDescription;
+    id<thisEvent> delegate;
+    IBOutlet UITextField *eventDescription;
 }
 
 -(IBAction)saveAndClose:(id)sender;

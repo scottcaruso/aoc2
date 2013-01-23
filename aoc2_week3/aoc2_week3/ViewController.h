@@ -9,9 +9,16 @@
 #import <UIKit/UIKit.h>
 #import "AddEvent.h"
 
-@interface ViewController : UIViewController
+@protocol thisEvent <NSObject>
+
+@required
+-(void)grabEventText:(NSString *)textEntered;
+
+@end
+
+@interface ViewController : UIViewController <thisEvent>
 {
-    
+
 }
 
 -(IBAction)openSecondView: (id)sender;

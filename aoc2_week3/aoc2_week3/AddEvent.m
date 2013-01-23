@@ -13,6 +13,7 @@
 @end
 
 @implementation AddEvent
+@synthesize delegate;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -42,7 +43,6 @@
     if (delegate != nil)
     {
         [self grabEventText:eventDescription.text];
-        NSLog(@"%@",eventDescription.text);
     }
 }
 
@@ -53,9 +53,10 @@
     return TRUE;
 }
 
--(void)grabEventText:(NSString *)eventDescription
+-(void)grabEventText:(NSString *)textEntered
 {
-    
+    NSString* newEvent = textEntered;
+    NSLog(@"%@",newEvent);
 }
 
 @end
