@@ -23,6 +23,8 @@
 		30223AA716AF85EC00D9A0A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30223A8216AF85EC00D9A0A8 /* Foundation.framework */; };
 		30223AAF16AF85EC00D9A0A8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30223AAD16AF85EC00D9A0A8 /* InfoPlist.strings */; };
 		30223AB216AF85EC00D9A0A8 /* aoc2_week3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 30223AB116AF85EC00D9A0A8 /* aoc2_week3Tests.m */; };
+		30223AC616AF8CE500D9A0A8 /* AddEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 30223AC416AF8CE500D9A0A8 /* AddEvent.m */; };
+		30223AC716AF8CE500D9A0A8 /* AddEvent.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30223AC516AF8CE500D9A0A8 /* AddEvent.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,9 @@
 		30223AAE16AF85EC00D9A0A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		30223AB016AF85EC00D9A0A8 /* aoc2_week3Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aoc2_week3Tests.h; sourceTree = "<group>"; };
 		30223AB116AF85EC00D9A0A8 /* aoc2_week3Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = aoc2_week3Tests.m; sourceTree = "<group>"; };
+		30223AC316AF8CE500D9A0A8 /* AddEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEvent.h; sourceTree = "<group>"; };
+		30223AC416AF8CE500D9A0A8 /* AddEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddEvent.m; sourceTree = "<group>"; };
+		30223AC516AF8CE500D9A0A8 /* AddEvent.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddEvent.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +127,9 @@
 				30223A9816AF85EC00D9A0A8 /* ViewController.h */,
 				30223A9916AF85EC00D9A0A8 /* ViewController.m */,
 				30223A9B16AF85EC00D9A0A8 /* ViewController.xib */,
+				30223AC316AF8CE500D9A0A8 /* AddEvent.h */,
+				30223AC416AF8CE500D9A0A8 /* AddEvent.m */,
+				30223AC516AF8CE500D9A0A8 /* AddEvent.xib */,
 				30223A8716AF85EC00D9A0A8 /* Supporting Files */,
 			);
 			path = aoc2_week3;
@@ -236,6 +244,7 @@
 				30223A9516AF85EC00D9A0A8 /* Default@2x.png in Resources */,
 				30223A9716AF85EC00D9A0A8 /* Default-568h@2x.png in Resources */,
 				30223A9D16AF85EC00D9A0A8 /* ViewController.xib in Resources */,
+				30223AC716AF8CE500D9A0A8 /* AddEvent.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +282,7 @@
 				30223A8D16AF85EC00D9A0A8 /* main.m in Sources */,
 				30223A9116AF85EC00D9A0A8 /* AppDelegate.m in Sources */,
 				30223A9A16AF85EC00D9A0A8 /* ViewController.m in Sources */,
+				30223AC616AF8CE500D9A0A8 /* AddEvent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
