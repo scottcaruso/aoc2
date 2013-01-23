@@ -41,7 +41,7 @@
 {
     NSString* newEvent = textEntered;
     NSDate* newDate = dateEntered;
-    NSLog(@"%@,%@",newEvent,newDate);
+    mainView.text = [NSString stringWithFormat:@"%@,%@",textEntered,dateEntered];
 }
 
 @end

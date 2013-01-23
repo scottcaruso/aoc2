@@ -18,7 +18,7 @@
 
 @interface ViewController : UIViewController <thisEvent>
 {
-
+    IBOutlet UITextView *mainView;
 }
 
 -(IBAction)openSecondView: (id)sender;

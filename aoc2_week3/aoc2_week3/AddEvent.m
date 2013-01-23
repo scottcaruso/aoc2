@@ -42,7 +42,7 @@
     [self dismissViewControllerAnimated:TRUE completion:nil];
     if (delegate != nil)
     {
-        [self grabEventText:eventDescription.text date:[datePicker date]];
+        [delegate grabEventText:eventDescription.text date:[datePicker date]];
     }
 }
 
@@ -76,11 +76,5 @@
     return TRUE;
 }
 
--(void)grabEventText:(NSString *)textEntered date:(NSDate*)dateEntered
-{
-    NSString* newEvent = textEntered;
-    NSDate* newDate = dateEntered;
-    NSLog(@"%@,%@",newEvent,newDate);
-}
 
 @end
