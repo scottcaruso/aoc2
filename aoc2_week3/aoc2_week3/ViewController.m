@@ -26,4 +26,14 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(IBAction)openSecondView:(id)sender
+{
+    AddEvent *addEvent = [[AddEvent alloc] initWithNibName:@"AddEvent" bundle:nil];
+    if (addEvent != nil);
+    {
+        [self presentViewController:addEvent animated:TRUE completion:nil];
+    }
+    
+}
+
 @end

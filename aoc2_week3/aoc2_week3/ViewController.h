@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AddEvent.h"
 
 @interface ViewController : UIViewController
+{
+    
+}
+
+-(IBAction)openSecondView: (id)sender;
 
 @end

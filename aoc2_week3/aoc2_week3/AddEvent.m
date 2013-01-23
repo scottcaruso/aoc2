@@ -35,4 +35,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+//This is what gets called when the Save button is clicked.
+-(IBAction)saveAndClose:(id)sender
+{
+    [self dismissViewControllerAnimated:TRUE completion:nil];
+}
+
 @end

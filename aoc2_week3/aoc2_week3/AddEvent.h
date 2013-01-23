@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface AddEvent : UIViewController
+{
+    
+}
+
+-(IBAction)saveAndClose:(id)sender;
 
 @end
