@@ -39,6 +39,23 @@
 -(IBAction)saveAndClose:(id)sender
 {
     [self dismissViewControllerAnimated:TRUE completion:nil];
+    if (delegate != nil)
+    {
+        [self grabEventText:eventDescription.text];
+        NSLog(@"%@",eventDescription.text);
+    }
+}
+
+-(BOOL)textFieldShouldBeginEditing:(UITextField *)eventEntry
+{
+    eventEntry.text = @"";
+    
+    return TRUE;
+}
+
+-(void)grabEventText:(NSString *)eventDescription
+{
+    
 }
 
 @end

@@ -8,11 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AddEvent : UIViewController
+@protocol thisEvent <NSObject>
+
+-(void)grabEventText:(NSString *)eventDescription;
+
+@end
+
+@interface AddEvent : UIViewController <UITextFieldDelegate>
 {
-    
+    id <thisEvent> delegate;
+    IBOutlet UITextView *eventDescription;
 }
 
 -(IBAction)saveAndClose:(id)sender;
+
+@property (strong)id<thisEvent> delegate;
 
 @end
