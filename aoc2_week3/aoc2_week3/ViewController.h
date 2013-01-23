@@ -12,7 +12,7 @@
 @protocol thisEvent <NSObject>
 
 @required
--(void)grabEventText:(NSString *)textEntered;
+-(void)grabEventText:(NSString *)textEntered date:(NSDate*)dateEntered;
 
 @end
 

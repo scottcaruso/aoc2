@@ -37,10 +37,11 @@
     
 }
 
--(void)grabEventText:(NSString *)textEntered
+-(void)grabEventText:(NSString *)textEntered date:(NSDate*)dateEntered
 {
     NSString* newEvent = textEntered;
-    NSLog(@"%@",newEvent);
+    NSDate* newDate = dateEntered;
+    NSLog(@"%@,%@",newEvent,newDate);
 }
 
 @end
