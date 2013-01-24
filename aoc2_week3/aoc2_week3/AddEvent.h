@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ViewController.h"
 
 @protocol thisEvent <NSObject>
 
@@ -21,11 +20,14 @@
     IBOutlet UITextField *eventDescription;
     IBOutlet UIButton *dateButton;
     IBOutlet UIDatePicker *datePicker;
+    IBOutlet UIButton *closeKeyboard;
 }
 
 -(IBAction)saveAndClose:(id)sender;
 -(IBAction)showDateSpinner:(id)sender;
 -(IBAction)changeButtonText:(id)sender;
+-(IBAction)showKeyboardButton:(id)sender;
+-(IBAction)closeKeyboard:(id)sender;
 
 @property (strong)id<thisEvent> delegate;
 

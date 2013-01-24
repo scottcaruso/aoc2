@@ -69,11 +69,17 @@
     [dateButton setTitle:modifiedDateString forState:2];
 }
 
--(BOOL)textFieldShouldBeginEditing:(UITextField *)eventEntry
+//Calls the Hide Keyboard button to appear when the keyboard becomes active.
+-(IBAction)showKeyboardButton:(id)sender
 {
-    eventEntry.text = @"";
-    
-    return TRUE;
+    closeKeyboard.hidden = FALSE;
+}
+
+//Closes the keyboard when the Hide Keyboard button is pressed
+-(IBAction)closeKeyboard:(id)sender
+{
+    [eventDescription resignFirstResponder];
+    closeKeyboard.hidden = TRUE;
 }
 
 

@@ -23,7 +23,7 @@
 
 -(IBAction)openSecondView: (id)sender;
 
--(NSString *)appendNewEvent:(NSString *)description date:(NSString *)dateString;
+-(void)appendNewEvent:(NSString *)description date:(NSString *)dateString;
 
 -(NSString *)convertTimeToLocalRegion:(NSDate *)dateEntered;
 
