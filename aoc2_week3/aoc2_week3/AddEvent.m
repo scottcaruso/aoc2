@@ -50,11 +50,14 @@
 -(IBAction)showDateSpinner:(id)sender
 {
     datePicker.hidden = FALSE;
-    NSString* date = [NSString stringWithFormat:@"%@",[datePicker date]];
-    NSString* modifiedDateString = [date substringToIndex:10];
-    [dateButton setTitle:modifiedDateString forState:0]; //sets the text on the button to the minimum date
-    [dateButton setTitle:modifiedDateString forState:1];
-    [dateButton setTitle:modifiedDateString forState:2];
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat: @"MM-dd-YYYY"];
+    NSString *stringFromDate = [formatter stringFromDate:[datePicker date]];
+    //NSString* date = [NSString stringWithFormat:@"%@",[datePicker date]];
+    //NSString* modifiedDateString = [date substringToIndex:10];
+    [dateButton setTitle:stringFromDate forState:0]; //sets the text on the button to the minimum date
+    [dateButton setTitle:stringFromDate forState:1];
+    [dateButton setTitle:stringFromDate forState:2];
     NSDate* thisDate = [datePicker date];
     datePicker.minimumDate = thisDate; //sets the minimum date for the picker
 }
@@ -62,11 +65,12 @@
 //When the spinner value changes, change the value of the button
 -(IBAction)changeButtonText:(id)sender
 {
-    NSString* date = [NSString stringWithFormat:@"%@",[datePicker date]];
-    NSString* modifiedDateString = [date substringToIndex:10];
-    [dateButton setTitle:modifiedDateString forState:0];
-    [dateButton setTitle:modifiedDateString forState:1];
-    [dateButton setTitle:modifiedDateString forState:2];
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat: @"MM-dd-YYYY"];
+    NSString *stringFromDate = [formatter stringFromDate:[datePicker date]];
+    [dateButton setTitle:stringFromDate forState:0];
+    [dateButton setTitle:stringFromDate forState:1];
+    [dateButton setTitle:stringFromDate forState:2];
 }
 
 //Calls the Hide Keyboard button to appear when the keyboard becomes active.
