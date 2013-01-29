@@ -20,13 +20,21 @@
     IBOutlet UIButton *dateButton;
     IBOutlet UIDatePicker *datePicker;
     IBOutlet UIButton *closeKeyboard;
+    IBOutlet UILabel *swipeLeftToClose;
+    
+    UISwipeGestureRecognizer *swipeLeft;
+    
+    NSString *defaultDescription;
 }
 
--(IBAction)saveAndClose:(id)sender;
 -(IBAction)showDateSpinner:(id)sender;
 -(IBAction)changeButtonText:(id)sender;
 -(IBAction)showKeyboardButton:(id)sender;
 -(IBAction)closeKeyboard:(id)sender;
+
+-(void)saveAndClose:(UISwipeGestureRecognizer*)recognizer;
+
+-(NSString*)getDefaultText;
 
 @property (strong)id<thisEvent> delegate;
 

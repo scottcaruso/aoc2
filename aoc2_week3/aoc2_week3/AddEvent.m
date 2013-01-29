@@ -36,14 +36,44 @@
     // Dispose of any resources that can be recreated.
 }
 
-//This is what gets called when the Save button is clicked.
--(IBAction)saveAndClose:(id)sender
+-(void)viewWillAppear:(BOOL)animated
 {
-    [self dismissViewControllerAnimated:TRUE completion:nil];
-    if (delegate != nil)
+    //initiatilize the swiper label at the bottom
+    swipeLeft = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(saveAndClose:)];
+    swipeLeft.direction = UISwipeGestureRecognizerDirectionLeft;
+    [swipeLeftToClose addGestureRecognizer:swipeLeft];
+    defaultDescription = [self getDefaultText]; //This gets the default string from the text field as the view loads. Used to determine if text has been entered later.
+    
+    //obtain the default Event Description
+    
+    [super viewWillAppear:animated];
+}
+
+
+//This is what gets called when the Save button is clicked.
+-(void)saveAndClose:(UISwipeGestureRecognizer*)recognizer
+{
+    if (recognizer.direction == UISwipeGestureRecognizerDirectionLeft)
     {
-        [delegate grabEventText:eventDescription.text date:[datePicker date]];
+        if (eventDescription.text == defaultDescription) //verifies if any text has been entered
+        {
+            UIAlertView *warning = [[UIAlertView alloc] initWithTitle:@"No text." message:@"Please enter some descriptive text for this event before saving." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            [warning show];
+        } else
+        {
+            [self dismissViewControllerAnimated:TRUE completion:nil];
+            if (delegate != nil)
+            {
+                [delegate grabEventText:eventDescription.text date:[datePicker date]];
+            }
+        }
     }
+}
+
+-(NSString*)getDefaultText
+{
+    NSString *defaultText = eventDescription.text;
+    return defaultText;
 }
 
 //Show the Date Spinner, set the minimum date to the current date/time, and change the button to display a value
@@ -53,8 +83,6 @@
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat: @"MM-dd-YYYY"];
     NSString *stringFromDate = [formatter stringFromDate:[datePicker date]];
-    //NSString* date = [NSString stringWithFormat:@"%@",[datePicker date]];
-    //NSString* modifiedDateString = [date substringToIndex:10];
     [dateButton setTitle:stringFromDate forState:0]; //sets the text on the button to the minimum date
     [dateButton setTitle:stringFromDate forState:1];
     [dateButton setTitle:stringFromDate forState:2];
