@@ -26,16 +26,28 @@
     // Dispose of any resources that can be recreated.
 }
 
-//This function opens the AddEvent view.
--(IBAction)openSecondView:(id)sender
+-(void)viewWillAppear:(BOOL)animated
 {
-    AddEvent *addEvent = [[AddEvent alloc] initWithNibName:@"AddEvent" bundle:nil];
-    if (addEvent != nil);
-    {
-        addEvent.delegate = self;
-        [self presentViewController:addEvent animated:TRUE completion:nil];
-    }
+    swipeRight = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(openSecondView:)];
+    swipeRight.direction = UISwipeGestureRecognizerDirectionRight;
+    [swipeRightToOpen addGestureRecognizer:swipeRight];
     
+    [super viewWillAppear:animated];
+}
+
+//This function opens the AddEvent view.
+-(void)openSecondView:(UISwipeGestureRecognizer*)recognizer
+{
+    if (recognizer.direction == UISwipeGestureRecognizerDirectionRight)
+    {
+        AddEvent *addEvent = [[AddEvent alloc] initWithNibName:@"AddEvent" bundle:nil];
+        if (addEvent != nil);
+        {
+            addEvent.delegate = self;
+            [self presentViewController:addEvent animated:TRUE completion:nil];
+        }
+    }
+
 }
 
 //This function takes the information from the secondview and calls the append method against it.

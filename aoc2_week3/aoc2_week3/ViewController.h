@@ -19,9 +19,12 @@
 @interface ViewController : UIViewController <thisEvent>
 {
     IBOutlet UITextView *mainView;
+    IBOutlet UILabel *swipeRightToOpen;
+    
+    UISwipeGestureRecognizer *swipeRight;
 }
 
--(IBAction)openSecondView: (id)sender;
+//-(IBAction)openSecondView: (id)sender;
 -(IBAction)onSaveButton: (id)sender;
 
 -(void)appendNewEvent:(NSString *)description date:(NSString *)dateString;
