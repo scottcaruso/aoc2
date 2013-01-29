@@ -13,7 +13,6 @@
 -(void)grabEventText:(NSString*)textEntered date:(NSDate*)dateEntered;
 
 @end
-
 @interface AddEvent : UIViewController <UITextFieldDelegate>
 {
     id<thisEvent> delegate;

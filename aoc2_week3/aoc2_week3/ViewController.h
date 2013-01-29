@@ -22,6 +22,7 @@
 }
 
 -(IBAction)openSecondView: (id)sender;
+-(IBAction)onSaveButton: (id)sender;
 
 -(void)appendNewEvent:(NSString *)description date:(NSString *)dateString;
 
