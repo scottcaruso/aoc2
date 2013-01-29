@@ -66,6 +66,7 @@
         if (addEvent != nil);
         {
             addEvent.delegate = self;
+
             [self presentViewController:addEvent animated:TRUE completion:nil];
         }
     }

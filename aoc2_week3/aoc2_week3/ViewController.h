@@ -9,13 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "AddEvent.h"
 
-@protocol thisEvent <NSObject>
-
-@required
--(void)grabEventText:(NSString *)textEntered date:(NSDate*)dateEntered;
-
-@end
-
 @interface ViewController : UIViewController <thisEvent>
 {
     IBOutlet UITextView *mainView;
@@ -24,7 +17,6 @@
     UISwipeGestureRecognizer *swipeRight;
 }
 
-//-(IBAction)openSecondView: (id)sender;
 -(IBAction)onSaveButton: (id)sender;
 
 -(void)appendNewEvent:(NSString *)description date:(NSString *)dateString;
