@@ -27,13 +27,16 @@
     NSString *defaultDescription;
 }
 
+//Actions for the various on-screen elements. All are self-explanatory.
 -(IBAction)showDateSpinner:(id)sender;
 -(IBAction)changeButtonText:(id)sender;
 -(IBAction)showKeyboardButton:(id)sender;
 -(IBAction)closeKeyboard:(id)sender;
 
+//Takes the entered information, appends it to the main view, and closes this view
 -(void)saveAndClose:(UISwipeGestureRecognizer*)recognizer;
 
+//In the implementation file, this function returns the blank string that exists in the text field when the view first opens.
 -(NSString*)getDefaultText;
 
 @property (strong)id<thisEvent> delegate;

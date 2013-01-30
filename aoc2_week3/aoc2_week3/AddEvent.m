@@ -70,6 +70,7 @@
     }
 }
 
+//Gets the blank text from the textfield when the view first loads, for running a check against later to verify if there is valid data to move to the main view.
 -(NSString*)getDefaultText
 {
     NSString *defaultText = eventDescription.text;
