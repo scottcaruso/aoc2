@@ -37,7 +37,6 @@
 -(void)saveAndClose:(UISwipeGestureRecognizer*)recognizer;
 
 //In the implementation file, this function returns the blank string that exists in the text field when the view first opens.
--(NSString*)getDefaultText;
 
 @property (strong)id<thisEvent> delegate;
 

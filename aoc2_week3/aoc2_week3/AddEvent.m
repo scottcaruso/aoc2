@@ -42,7 +42,6 @@
     swipeLeft = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(saveAndClose:)];
     swipeLeft.direction = UISwipeGestureRecognizerDirectionLeft;
     [swipeLeftToClose addGestureRecognizer:swipeLeft];
-    defaultDescription = [self getDefaultText]; //This gets the default string from the text field as the view loads. Used to determine if text has been entered later.
     
     //obtain the default Event Description
     
@@ -55,7 +54,7 @@
 {
     if (recognizer.direction == UISwipeGestureRecognizerDirectionLeft)
     {
-        if (eventDescription.text == defaultDescription) //verifies if any text has been entered
+        if ([eventDescription.text isEqualToString:@""]) //verifies if any text has been entered
         {
             UIAlertView *warning = [[UIAlertView alloc] initWithTitle:@"No text." message:@"Please enter some descriptive text for this event before saving." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
             [warning show];
@@ -68,13 +67,6 @@
             }
         }
     }
-}
-
-//Gets the blank text from the textfield when the view first loads, for running a check against later to verify if there is valid data to move to the main view.
--(NSString*)getDefaultText
-{
-    NSString *defaultText = eventDescription.text;
-    return defaultText;
 }
 
 //Show the Date Spinner, set the minimum date to the current date/time, and change the button to display a value
