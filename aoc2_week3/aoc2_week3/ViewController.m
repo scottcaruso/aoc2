@@ -118,6 +118,8 @@
             NSString *dataToSave = mainView.text;
             [saveEvents setObject:dataToSave forKey:@"Event List"];
             [saveEvents synchronize];
+            UIAlertView *saved = [[UIAlertView alloc] initWithTitle:@"Data saved." message:@"Your current text field has been saved as the default!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            [saved show];
         }
     } else
     {
